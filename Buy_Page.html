@@ -1,43 +1,76 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
     <head>
-        <title>RealHome | Buy</title>
-        <!--Add an Icon image-->
-        <link rel="icon" href="">
-        <link rel="Stylesheet" href="RealHome.css">
-        <!--Add more meta tags-->
-        <meta name="keywords" content="RealHome, House for sale, real estate">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RealHome - Buy a Property</title>
+        <link rel="stylesheet" href="RealHome.css">
     </head>
-
     <body>
         <header>
-            <!--Add the BUY, SELL, and more here-->
-            <div class="floattop">
-                Rawr
-            </div>
+            <nav>
+                <ul>
+                    <!--Add a border around the "Buy" text-->
+                    <li><a href="Buy_Page.html">Buy</a></li>
+                    <!-------------------------------------->
+                    <li><a href="Rent_Page.html">Rent</a></li>
+                    <li><a href="Sell_Page.html">Sell</a></li>
+                </ul>
+                <div class="logo-main">
+                    <img src="Images/RealHomeLogo.png" alt="RealHome">
+                    <!--Make the RealHome fit in-->
+                    RealHome
+                </div>
+                <!--Add funtion to the sign in button and then update the header with signde in-->
+                <div class="sign-in">
+                    <a href="#signin">Sign in</a>
+                </div>
+            </nav>
         </header>
         <main>
-            <!--Add background image that will show behing the search bar-->
-            <!--Im thinking of creating div and changing the background of it with
-            search bar and stuff within it-->
-            <div class="floatsearchbar">
-                rawr
+            <h1>A Real Estate Listing Platform</h1>
+            <div class="search-container">
+                <input type="text" placeholder="Search for properties...">
+                <button type="submit">
+                    Search
+                </button>
             </div>
-            <!--Use this as the main body-->
-            <div class="floatcenter">
-                Rawr
-            </div>
+
         </main>
         <footer>
-            <!--Add the about part of the website-->
-            <div class="floatbottom">
-                    <div class="abouttitle">
-
-                    </div>
-                    <div class="aboutsubtext">
-
-                    </div>
+            <div class="aboutrow">
+                <div class="abouttitle">
+                    Real Home
+                </div>
+                <div class="socialicons">
+                    <!--Add clickable images of socials icons-->
+                    rawr
+                </div>
+            </div>
+            <div class="aboutsubtext">
+                <hr color="white">
+                <div class="aboutcollumn1">
+                    <ul>
+                        <li><a href="">About us</a></li>
+                        <br>
+                        <li><a href="">Contact us</a></li>
+                        <br>
+                        <li><a href="">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="aboutcollumn2">
+                    <ul>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <br>
+                        <li><a href="">Privacy Policy</a></li>
+                        <br>
+                        <li><a href="">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <!--Maby add another collumn for the blank space there to show something-->
+                <div class="copyrightlable">
+                    Copyright © 2024 Real Home
+                </div>
             </div>
         </footer>
     </body>
