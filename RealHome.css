@@ -18,6 +18,16 @@ header {
     font-weight: bold;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Images/CityBuildings.jpg");
+    background-size: cover;
+    height: 600px;
+}
+
 nav {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -76,7 +86,7 @@ main {
 }
 
 h1 {
-    color: #333;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
@@ -94,6 +104,7 @@ input[type="text"] {
 }
 
 button {
+    font-weight: bold;
     background-color: white;
     border: 1px solid #ccc;
     padding: 10px;
