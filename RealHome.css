@@ -22,6 +22,22 @@ body {
 
 .floatbottom {
     border: 1px solid;
-    border-color: black;
-    background-color: #bde1fd;
+    border-color: white;
+    background-color: #52637e;
+}
+
+.abouttitle {
+    color: white;
+    font-size: 40px;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
+}
+
+.aboutsubtext {
+    color: #bde1fd;
+    font-size: 15px;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: left;
 }
