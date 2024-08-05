@@ -1,0 +1,27 @@
+body {
+    background-color: #657481;
+}
+
+.floattop {
+    border: 1px solid;
+    border-color: black;
+    background-color: white;
+}
+.floatsearchbar {
+    border: 1px solid;
+    border-color: black;
+    background-image: url("");  
+}
+.floatcenter {
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid;
+    border-color: black;
+    background-color: white;
+}
+
+.floatbottom {
+    border: 1px solid;
+    border-color: black;
+    background-color: #bde1fd;
+}
