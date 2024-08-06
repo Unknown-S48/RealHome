@@ -3,37 +3,44 @@
 <html>
     <head>
         <title>RealHome</title>
-        <!--Add an Icon image-->
-        <link rel="icon" href="">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="Stylesheet" href="RealHome.css">
-        <!--Add more meta tags-->
         <meta name="keywords" content="RealHome, House for sale, real estate">
+        <title>RealHome - A Real Estate Listing platform</title>
     </head>
 
     <body>
-        <header>
-            <!--Add the BUY, SELL, and more here-->
-            <div class="floattop">
-                Rawr
-            </div>
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#buy"
+                            class="nav__link">Buy</a></li>
+                    <li class="nav__item"><a href="#sell"
+                            class="nav__link">Sell</a></li>
+                    <li class="nav__item"><a href="#rent"
+                            class="nav__link">Rent</a></li>
+                </ul>
+                <div class="logo-main">
+                    <img src="Images/RealHomeLogo.png" alt="RealHome"
+                        class="logo-main__image">
+                </div>
+                <div class="sign-in">
+                    <a href="#signin" class="sign-in__link">Sign in</a>
+                </div>
+            </nav>
         </header>
-        <main>
-            <!--Add background image that will show behing the search bar-->
-            <!--Im thinking of creating div and changing the background of it with
-            search bar and stuff within it-->
-            <div class="floatsearchbar">
-                rawr
-            </div>
-            <!--Use this as the main body-->
-            <div class="floatcenter">
-                Rawr
-            </div>
+        <main class="main-content">
+            <h1 class="main-content__title">A Real Estate Listing Platform</h1>
+            <!--Todo: Implement the listing functonality-->
         </main>
-        <footer>
-            <!--Add the about part of the website-->
-            <div class="floatbottom">
-                rawr
-            </div>
+        <section class="about">
+            <h2>About REALHOME</h2>
+            <p>We are your trusted partner in finding the perfect property.</p>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 RealHome. All rights reserved.</p>
         </footer>
     </body>
 </html>
