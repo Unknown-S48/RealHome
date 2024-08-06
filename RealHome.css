@@ -136,6 +136,20 @@ body {
     max-height: 100%;
 }
 
+/* Info Text */
+.infobox {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.infobox h1 {
+    font-size: 50px;
+}
+
+.infobox h2 {
+    font-size: 25px;
+}
+
 /* Footer Styles */
 .footer {
     font-family: Arial, sans-serif;
