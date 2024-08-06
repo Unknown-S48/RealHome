@@ -158,10 +158,16 @@ body {
     float: left;
 }
 
-.footer-social-icons {
+.footer-social-icons-row {
     display: flex;
     float: right;
     width: 30%;
+}
+
+.footer-social-icons {
+    height: 35px;
+    margin-right: 10px;
+    padding-right: 20px;
 }
 
 .footer-subtext {
