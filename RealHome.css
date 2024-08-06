@@ -1,27 +1,168 @@
+/* Global Styles */
 body {
-    background-color: #657481;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
 }
 
-.floattop {
-    border: 1px solid;
-    border-color: black;
-    background-color: white;
-}
-.floatsearchbar {
-    border: 1px solid;
-    border-color: black;
-    background-image: url("");  
-}
-.floatcenter {
-    margin-left: 5%;
-    margin-right: 5%;
-    border: 1px solid;
-    border-color: black;
+/* Header Styles */
+.header {
     background-color: white;
 }
 
-.floatbottom {
-    border: 1px solid;
-    border-color: black;
-    background-color: #bde1fd;
+.header__top-bar {
+    background-color: #f0f0f0;
+    padding: 5px 20px;
+}
+
+.header__logo-small {
+    font-weight: bold;
+}
+
+/* Navigation Styles */
+.nav {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.nav__link {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Logo Styles */
+.logo-main {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.logo-main__image {
+    height: 100px;
+    margin-right: 10px;
+}
+
+/* Sign-in Styles */
+.sign-in {
+    text-align: right;
+}
+
+.sign-in__link {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Main Content Styles */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Images/CityBuildings.jpg");
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.main-content__title {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Search Container Styles */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-container__input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+.search-container__button {
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-container__button-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Image Placeholder Styles */
+.image-placeholder {
+    background-color: #ccc;
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-placeholder__img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.about {
+    text-align: center;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-container__input,
+    .search-container__button {
+        width: 100%;
+        max-width: none;
+        border-radius: 4px;
+        margin-bottom: 0.5rem;
+    }
 }
