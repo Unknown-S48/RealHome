@@ -152,25 +152,21 @@ body {
 
 /* Footer Styles */
 .footer {
-    font-family: Arial, sans-serif;
     background-color: white;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    text-align: center;
-    padding-bottom: 1%;
-}
-
-.footer-row1 {
     color: black;
-    font-size: 40px; 
-    padding-top: 1%;
-    padding-bottom: 2%;
+    padding: 0% 2.5% 1% 2.5%;
+    text-align: center;
 }
 
-.footer-title {
+.footer-row {
+    font-size: 40px; 
+    padding: 1% 0% 2% 0%;
+}
+
+.footer-row-title {
     display: flex;
-    width: 80%;
     float: left;
+    width: 80%;
 }
 
 .footer-social-icons-row {
@@ -182,33 +178,27 @@ body {
 
 .footer-social-icons {
     height: 35px;
-    margin-right: 10px;
-    padding-right: 20px;
+    width: 35px;
+    margin-right: 35px;
 }
 
 .footer-subtext {
-    color: black;
     font-size: 15px;
     text-align: center; 
+    padding-bottom: 1%;
 }
 
 .footer-links {
     text-decoration: none;
-    color: #000;
+    color: black;
     display: inline;
-    padding-right: 2%;
-}
-
-.footer-collumn1 {
-    width: auto;
-    padding-bottom: 1%;
-}
+    padding: 0 .5% 0 .5%;
+}   
 
 .footer-copyright-lable {
-    padding-bottom: 1%;
     color: #4d4d4d;
     display: inline;
-    width: 15%;
+    padding-bottom: 1%;
 }
 
 /* Media Queries */
