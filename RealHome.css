@@ -164,6 +164,8 @@ body {
 }
 
 .footer-row-title {
+    font-family: "Times New Roman", Times, serif;
+    font-size:36px;
     display: flex;
     float: left;
     width: 80%;
@@ -174,6 +176,7 @@ body {
     Justify-content: space-between;
     float: right;
     width: 20%;
+    height: 36px;
 }
 
 .footer-social-icons {
