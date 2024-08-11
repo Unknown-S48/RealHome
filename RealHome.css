@@ -164,7 +164,7 @@ body {
 }
 
 .footer-row-title {
-    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
     font-size:36px;
     display: flex;
     float: left;
