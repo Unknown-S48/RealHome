@@ -11,22 +11,20 @@ body {
     background-color: white;
 }
 
-.header__top-bar {
-    background-color: #f0f0f0;
-    padding: 5px 20px;
-}
-
-.header__logo-small {
-    font-weight: bold;
-}
-
 /* Navigation Styles */
 .nav {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    padding: 10px 20px;
+    padding-left: 1.5%;
+    padding-right: 2.5%;
     border-bottom: 1px solid #ccc;
+}
+
+.text-border {
+    border:solid #333 2px;
+    border-radius: 5px;
+    padding: 1px 1px 1px 1px;
 }
 
 .nav__list {
@@ -43,7 +41,7 @@ body {
 }
 
 .nav__link {
-    font-size: large;
+    font-size: 25px;
     font-weight: bold;
     text-decoration: none;
     color: #333;
@@ -57,8 +55,7 @@ body {
 }
 
 .logo-main__image {
-    height: 100px;
-    margin-right: 10px;
+    height: 80px;
 }
 
 /* Sign-in Styles */
@@ -67,7 +64,7 @@ body {
 }
 
 .sign-in__link {
-    font-size: large;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     color: #333;
@@ -84,6 +81,7 @@ body {
     height: 600px;
     text-align: center;
     padding: 40px 20px;
+    border: solid black;
 }
 
 .main-content__title {
@@ -134,16 +132,73 @@ body {
     max-height: 100%;
 }
 
-.about {
-    text-align: center;
+/* Info Text */
+.infobox {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.infobox h1 {
+    font-size: 50px;
+}
+
+.infobox h2 {
+    font-size: 25px;
 }
 
 /* Footer Styles */
 .footer {
     background-color: white;
-    padding: 20px;
+    color: black;
+    padding: 0% 2.5% 1% 2.5%;
     text-align: center;
-    border-top: 1px solid #ccc;
+}
+
+.footer-row {
+    font-size: 40px; 
+    padding: 1% 0% 2% 0%;
+}
+
+.footer-row-title {
+    font-weight: bold;
+    font-size:36px;
+    display: flex;
+    float: left;
+    width: 80%;
+}
+
+.footer-social-icons-row {
+    display: flex;
+    Justify-content: space-between;
+    float: right;
+    width: 20%;
+    height: 36px;
+}
+
+.footer-social-icons {
+    height: 35px;
+    width: 35px;
+    margin: 0 5px 0 5px;
+    padding: 0 10px 0 10px;
+}
+
+.footer-subtext {
+    font-size: 15px;
+    text-align: center; 
+    padding-bottom: 1%;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: black;
+    display: inline;
+    padding: 0 .5% 0 .5%;
+}   
+
+.footer-copyright-lable {
+    color: #4d4d4d;
+    display: inline;
+    padding-bottom: 1%;
 }
 
 /* Media Queries */
