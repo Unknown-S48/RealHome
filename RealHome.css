@@ -66,11 +66,11 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: #333;
-    background-color: #dddddd;
+    background-color: white;
     background-size: auto;
     margin-left: 3%;
-    border:solid #333 2px;
-    border-radius: 20px;
+    border:solid black 2px;
+    border-radius: 18px;
     padding: 4px 8px;
 }
 
