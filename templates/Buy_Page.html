@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}RealHome - Home{% endblock %}
+
+{% block content %}
+<div class="grid-container">
+    {% for property in properties %}
+    <div class="grid-item">
+        {% if property.image %}
+        <img src="{{ property.image.url }}" alt="{{ property.title }}"
+            class="property-image">
+        {% else %}
+        <img src="{% static 'default-property-image.jpg' %}"
+            alt="Default Property Image" class="property-image">
+        {% endif %}
+        <h2 class="property-title">{{ property.title }}</h2>
+        <p class="property-price">R{{ property.price }}</p>
+        <p class="property-details">{{ property.description }}</p>
+        <a href="{% url 'details' property.id %}" class="property-button">View
+            Details</a>
+    </div>
+    {% endfor %}
+
+</div>
+{% endblock %}

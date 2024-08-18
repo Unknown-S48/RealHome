@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}RealHome - Home{% endblock %}
+
+{% block content %}
+<div class="main-content" role="main">
+    <h1 class="main-content__title">A Real Estate Listing Platform</h1>
+    <div class="search-container">
+        <input type="text" placeholder="Search"
+            class="search-container__input">
+        <button class="search-container__button">
+            <img src alt="Search"
+                class="search-container__button-icon">
+        </button>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}RealHome - Home{% endblock %}
+
+{% block content %}
+<div class=".main-content">
+    <h1>{{ property.title }}</h1>
+    <img src="{{property.image.url}}" alt="{{ property.title}}">
+    <h2>{{ property.price}}</h2>
+    <p>{{property.description}}</p>
+    <p>{{property.address}}</p>
+</div>
+{% endblock %}

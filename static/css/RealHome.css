@@ -1,0 +1,324 @@
+/* Global Styles */
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    background-color: white;
+    margin: 0% 2.5% 0;
+}
+
+/* Navigation Styles */
+.nav {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav__item {
+    margin-right: 5%;
+}
+
+.nav__link {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.text-border {
+    border: solid #333 2px;
+    border-radius: 5px;
+    padding: 1px 1px 1px;
+}
+
+/* Logo Styles */
+.logo-main {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.logo-main__image {
+    height: 80px;
+}
+
+/* Sign-in Styles */
+.sign-in {
+    text-align: right;
+}
+
+.sign-in__link {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Main Content Styles */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../Images/CityBuildings.jpg");
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+    padding: 40px 20px;
+    border: solid black;
+}
+
+.main-content__title {
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+/* Search Container Styles */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-container__input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+.search-container__button {
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-container__button-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Image Placeholder Styles */
+.image-placeholder {
+    background-color: #ccc;
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-placeholder__img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Info Text */
+.infobox {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.infobox h1 {
+    font-size: 50px;
+}
+
+.infobox h2 {
+    font-size: 25px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: white;
+    color: black;
+    padding: 0% 2.5% 1% 2.5%;
+    text-align: center;
+}
+
+.footer-row {
+    padding: 1% 0% 1% 0%;
+}
+
+.footer-row-title {
+    font-size: 36px;
+    display: flex;
+    float: left;
+    width: 80%;
+
+}
+
+.footer-social-icons-row {
+    display: flex;
+    Justify-content: space-between;
+    float: right;
+    width: 20%;
+    height: 43px;
+
+}
+
+.footer-social-icons {
+    height: 35px;
+    width: 35px;
+    padding: 0% 30px 0% 30px;
+}
+
+.footer-subtext {
+    font-size: 15px;
+    text-align: center;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: black;
+    display: inline;
+    padding: 0 .5% 0 .5%;
+}
+
+.footer-copyright-lable {
+    color: #4d4d4d;
+    display: inline;
+    padding: 1% 0 1% 0;
+}
+
+/* Buy page styles */
+.grid-container {
+    width: 100%;
+    /* Adjust based on your preference */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    background-image: url("../Images/CityBuildings.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: calc(100vh - 100px);
+    /* Adjust based on your header/footer height */
+}
+
+.grid-item {
+    height: 400px;
+    width: calc(33.333% - 20px);
+    /* Subtracting gap to maintain 3 items per row */
+    max-width: 350px;
+    /* Adjust based on your preference */
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 16px;
+    text-align: left;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-item:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+}
+
+.property-image {
+    width: 340px;
+    height: 190px;
+    /* Adjust based on your preference */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+.property-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.property-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #b89831;
+    margin-bottom: 10px;
+}
+
+.property-details {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.property-button {
+    background-color: #272727;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: auto;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.property-button:hover {
+    background-color: #555b61;
+}
+
+@media (max-width: 1200px) {
+    .grid-item {
+        width: calc(50% - 15px);
+        /* 2 items per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-item {
+        width: 100%;
+        /* Full width on small screens */
+        max-width: 400px;
+        /* Adjust based on your preference */
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-container__input,
+    .search-container__button {
+        width: 100%;
+        max-width: none;
+        border-radius: 4px;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Details Page */
