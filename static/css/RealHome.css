@@ -386,3 +386,109 @@ body {
 }
 
 /* Details Page */
+.property-detail {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.property-images {
+    margin-bottom: 20px;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.image-thumbnails img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.property-price {
+    font-size: 1px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.property-address {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.property-stats {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.action-buttons button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.request-tour {
+    background-color: #0074e4;
+    color: white;
+    border: none;
+}
+
+.contact-agent {
+    background-color: white;
+    color: #0074e4;
+    border: 1px solid #0074e4;
+}
+
+.estimated-payment {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.get-pre-qualified {
+    color: #0074e4;
+    text-decoration: none;
+}
+
+.property-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.detail-icon {
+    font-size: 24px;
+}
+
+.detail-label {
+    font-size: 16px;
+}
