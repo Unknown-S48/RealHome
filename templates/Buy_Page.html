@@ -97,8 +97,8 @@
             <img src="{% static 'default-property-image.jpg' %}"
                 alt="Default Property Image" class="property-image">
             {% endif %}
-            <h2 class="property-price">{{ property.price }}</h2>
-            <p class="property-details">R{{ property.bedrooms }}</p>
+            <h1 class="property-price">R{{ property.price }}</h1>
+            <p class="property-details">Bedrooms: {{ property.bedrooms }}</p>
             <p class="property-address">{{ property.address }}</p>
             <a href="{% url 'details' property.id %}"
                 class="property-button">View

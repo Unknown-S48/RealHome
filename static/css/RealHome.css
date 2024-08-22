@@ -244,14 +244,14 @@ body {
 }
 
 .property-price {
-    font-size: 16px;
+    font-size: 100px;
     font-weight: bold;
     color: #b89831;
     margin-bottom: 10px;
 }
 
 .property-details {
-    font-size: 14px;
+    font-size: 15px;
     color: #666;
     margin-bottom: 10px;
 }
@@ -344,8 +344,6 @@ body {
     min-height: calc(100vh - 100px);
 }
 
-
-
 /* Media Queries */
 
 @media (max-width: 1200px) {
@@ -398,8 +396,8 @@ body {
 }
 
 .main-image {
-    width: 100%;
-    height: auto;
+    width: 800px;
+    height: 600px;
     border-radius: 8px;
 }
 
@@ -417,7 +415,7 @@ body {
 }
 
 .property-price {
-    font-size: 1px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -450,15 +448,15 @@ body {
 }
 
 .request-tour {
-    background-color: #0074e4;
+    background-color: #000000;
     color: white;
     border: none;
 }
 
 .contact-agent {
     background-color: white;
-    color: #0074e4;
-    border: 1px solid #0074e4;
+    color: #000000;
+    border: 1px solid #252525;
 }
 
 .estimated-payment {
@@ -469,7 +467,7 @@ body {
 }
 
 .get-pre-qualified {
-    color: #0074e4;
+    color: #b89831;
     text-decoration: none;
 }
 
