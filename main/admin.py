@@ -3,7 +3,7 @@ from .models import Property
 
 # Register your models here.
 class ProperytAdmin(admin.ModelAdmin):
-    list_display = ('title', 'price')
-    search_fields = ('title',)
+    list_display = ('address', 'price')
+    search_fields = ('address',)
 
 admin.site.register(Property, ProperytAdmin)
