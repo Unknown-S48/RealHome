@@ -198,18 +198,13 @@ body {
 /* Buy page styles */
 .grid-container {
     flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
 .grid-item {
     height: 400px;
-    width: calc(33.333% - 20px);
-    /* Subtracting gap to maintain 3 items per row */
-    max-width: 350px;
-    /* Adjust based on your preference */
     background-color: rgba(255, 255, 255, 0.9);
     border: 1px solid #e0e0e0;
     border-radius: 12px;
@@ -227,8 +222,8 @@ body {
 }
 
 .property-image {
-    width: 340px;
-    height: 190px;
+    width: 324px;
+    height: 175px;
     /* Adjust based on your preference */
     object-fit: cover;
     border-radius: 8px;
@@ -336,30 +331,11 @@ body {
     display: flex;
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     background-image: url("../Images/CityBuildings.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    min-height: calc(100vh - 100px);
-}
-
-/* Media Queries */
-
-@media (max-width: 1200px) {
-    .grid-item {
-        width: calc(50% - 15px);
-        /* 2 items per row on medium screens */
-    }
-}
-
-@media (max-width: 768px) {
-    .grid-item {
-        width: 100%;
-        /* Full width on small screens */
-        max-width: 400px;
-        /* Adjust based on your preference */
-    }
 }
 
 /* Media Queries */
