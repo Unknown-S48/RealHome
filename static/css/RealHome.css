@@ -158,6 +158,9 @@ body {
 
 .footer-row {
     padding: 1% 0% 1%;
+    display: flex;
+    justify-content: space-betweens;
+
 }
 
 .footer-row-title {
@@ -165,14 +168,13 @@ body {
     display: flex;
     float: left;
     width: 80%;
+    height: 45px;
 }
 
 .footer-social-icons-row {
     display: flex;
     Justify-content: space-between;
-    float: right;
-    width: 20%;
-    height: 43px;
+    height: 45px;
 }
 
 .footer-social-icons {
