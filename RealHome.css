@@ -158,21 +158,22 @@ body {
 
 .footer-row {
     padding: 1% 0% 1%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-row-title {
     font-size:36px;
     display: flex;
     float: left;
+    height: 45px;
     width: 80%;
 }
 
 .footer-social-icons-row {
     display: flex;
     Justify-content: space-between;
-    float: right;
-    width: 20%;
-    height: 43px;
+    height: 45px;
 }
 
 .footer-social-icons {
