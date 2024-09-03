@@ -297,9 +297,17 @@ body {
     margin-bottom: 10px;
 }
 
-.filter-section input[type="number"],
+
 .filter-section select {
     width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.filter-section input[type="number"] {
+    width: 92.5%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
