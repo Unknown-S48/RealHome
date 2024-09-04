@@ -30,9 +30,6 @@ class Property(models.Model):
     lot_size = models.CharField(max_length=50, blank=True, null=True)
     image = models.ImageField(null=True, blank=True)
 
-    def __str__(self):
-        return self.title
-    
     def save(self, *args, **kwargs):
         if self.image:
             img = Image.open(self.image)

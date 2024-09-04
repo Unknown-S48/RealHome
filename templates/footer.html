@@ -19,12 +19,12 @@
     </div>
     <hr color="black">
     <div class="footer-subtext">
-        <a href class="footer-links">About us</a>
-        <a href class="footer-links">Contact us</a>
-        <a href class="footer-links">Feedback</a>
-        <a href class="footer-links">Terms & Conditions</a>
-        <a href class="footer-links">Privacy Policy</a>
-        <a href class="footer-links">Cookie Policy</a>
+        <a href="{% url 'about' %}" class="footer-links">About us</a>
+        <a href="{% url 'contactUs' %}" class="footer-links">Contact us</a>
+        <a href="{% url 'terms' %}" class="footer-links">Terms &
+            Conditions</a>
+        <a href="{%url 'privacy' %}" class="footer-links">Privacy Policy</a>
+        <a href="{% url 'cookies' %}" class="footer-links">Cookie Policy</a>
     </div>
     <div class="footer-copyright-lable">
         Copyright © 2024 Real Home

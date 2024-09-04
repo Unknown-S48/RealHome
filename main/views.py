@@ -19,4 +19,18 @@ def details(request, property_id):
     property = get_object_or_404(Property, id=property_id)
     return render(request, 'details.html', {'property': property})
 
-# Create your views here.
+def contactUs(request):
+    return render(request, 'Contact_us.html')
+
+def privacyPolicy(request):
+    return render(request, 'Privacy_Policy.html')
+
+def terms(request):
+    return render(request, 'Terms_&_Conditions.html')
+
+def cookies(request):
+    return render(request, 'Cookie_Policy.html')
+
+def about(request):
+    return render(request, 'About_us.html')
+
