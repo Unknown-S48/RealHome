@@ -481,3 +481,10 @@ body {
 .detail-label {
     font-size: 16px;
 }
+
+/* Policy pages */
+.policies {
+    font-size: small;
+    background-color: #4d4d4d;
+    margin: 20px 20px 20px 20px;
+}
