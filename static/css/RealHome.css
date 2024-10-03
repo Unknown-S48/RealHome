@@ -89,7 +89,10 @@ body {
     background-color: none;
     margin-bottom: 20px;
     text-shadow:
-        1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+        1px 1px 0 #fff,
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff;
 }
 
 /* Search Container Styles */
