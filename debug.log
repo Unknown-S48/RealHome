@@ -83,3 +83,4 @@ Traceback (most recent call last):
     raise FieldError(
 django.core.exceptions.FieldError: Cannot resolve keyword 'owner' into field. Choices are: address, bathrooms, bedrooms, city, id, image, lot_size, price, property_type, square_meters, state, year_built, zip_code
 INFO 2024-10-07 16:57:14,950 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\views.py changed, reloading.
+INFO 2024-10-07 16:58:49,375 autoreload Watching for file changes with StatReloader
