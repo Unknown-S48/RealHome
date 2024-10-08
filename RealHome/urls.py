@@ -23,6 +23,7 @@ from main import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('auth/', include('user.urls', namespace='auth')),
     path('', include('main.urls')),
 ]
 

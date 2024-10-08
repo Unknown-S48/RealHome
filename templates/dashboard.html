@@ -1,0 +1,45 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="dashboard">
+    <h1>Welcome, {{ user.first_name }}!</h1>
+    
+    <div class="dashboard-stats">
+        <div class="stat-box">
+            <h3>Total Properties</h3>
+            <p>{{ total_properties }}</p>
+        </div>
+        <div class="stat-box">
+            <h3>Property Types</h3>
+            <ul>
+            {% for type in property_types %}
+                <li>{{ type.property_type }}: {{ type.count }}</li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="recent-properties">
+        <h2>Recent Properties</h2>
+        <ul>
+        {% for property in recent_properties %}
+            <li>
+                <a href="{% url 'property_detail' property.id %}">
+                    {{ property.title }} - {{ property.address }}
+                </a>
+            </li>
+        {% empty %}
+            <li>No properties listed yet.</li>
+        {% endfor %}
+        </ul>
+    </div>
+
+    <div class="dashboard-actions">
+        <a href="{% url 'list_property' %}" class="btn">List a New Property</a>
+        <a href="{% url 'edit_profile' %}" class="btn">Edit Profile</a>
+        <a href="{% url 'view_messages' %}" class="btn">View Messages</a>
+    </div>
+</div>
+{% endblock %}
