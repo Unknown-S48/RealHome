@@ -491,3 +491,23 @@ body {
     background-color: #4d4d4d;
     margin: 20px 20px 20px 20px;
 }
+
+/* sell page */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
