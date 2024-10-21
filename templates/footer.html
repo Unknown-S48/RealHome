@@ -1,0 +1,33 @@
+{% load static %}
+<footer class="footer">
+    <div class="footer-row">
+        <div class="footer-row-title"><b>Real Home</b></div>
+        <div class="footer-social-icons-row">
+            <a href="https://www.instagram.com/?hl=en"><img
+                    src="{% static 'Images/Instagram-Icon.png' %}"
+                    alt="Instagram" class="footer-social-icons"></a>
+            <a href="https://web.facebook.com/?_rdc=1&_rdr"><img
+                    src="{% static 'Images/Fackebook-Icon.png' %}"
+                    alt="Facebook" class="footer-social-icons"></a>
+            <a href="https://www.youtube.com/#!:"><img
+                    src="{% static 'Images/Youtube-Icon.png' %}" alt="Youtube"
+                    class="footer-social-icons"></a>
+            <a href="https://za.pinterest.com/"><img
+                    src="{% static 'Images/Pintrest-Icon.png' %}"
+                    alt="Pinterest" class="footer-social-icons"></a>
+        </div>
+    </div>
+    <hr color="black">
+    <div class="footer-subtext">
+        <a href="{% url 'about' %}" class="footer-links">About us</a>
+        <a href="{% url 'contactUs' %}" class="footer-links">Contact us</a>
+        <a href="{% url 'terms' %}" class="footer-links">Terms &
+            Conditions</a>
+        <a href="{%url 'privacy' %}" class="footer-links">Privacy Policy</a>
+        <a href="{% url 'cookies' %}" class="footer-links">Cookie Policy</a>
+    </div>
+    <div class="footer-copyright-lable">
+        Copyright © 2024 Real Home
+    </div>
+    <hr color="black">
+</footer>

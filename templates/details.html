@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}RealHome - Home{% endblock %}
+
+{% block content %}
+<div class="property-detail">
+    <div class="property-images">
+        <img src="{{ property.image.url }}"
+            alt="Property Image"
+            class="main-image">
+        <div class="image-thumbnails">
+            <img src="{{ property.image.url }}"
+                alt="Thumbnail 1">
+            <img src="{{ property.image.url }}"
+                alt="Thumbnail 2">
+            <img src="{{ property.image.url }}"
+                alt="Thumbnail 3">
+        </div>
+    </div>
+
+    <div class="property-info">
+        <h1 class="property-price">R{{ property.price|floatformat:0 }}</h1>
+        <p class="property-address">{{ property.address }}, {{ property.city }},
+            {{ property.state }} {{ property.zip_code }}</p>
+
+        <div class="property-stats">
+            <span class="stat">{{ property.bedrooms }} beds</span>
+            <span class="stat">{{ property.bathrooms }} baths</span>
+            <span class="stat">{{ property.square_meters }} sqft</span>
+        </div>
+
+        <div class="action-buttons">
+            <button class="request-tour">Request a tour</button>
+            <button class="contact-agent">Contact an agent</button>
+        </div>
+
+        <div class="estimated-payment">
+            <p>Est. payment: R{{ estimated_payment|floatformat:0 }}/mo</p>
+            <a href="#" class="get-pre-qualified">Get pre-qualified</a>
+        </div>
+
+        <div class="property-details">
+            <div class="detail-item">
+                <span class="detail-icon">🏠</span>
+                <span class="detail-label">{{ property.property_type }}</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-icon">🏗️</span>
+                <span class="detail-label">Built in {{ property.year_built }}
+                </span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-icon">📏</span>
+                <span class="detail-label">{{ property.lot_size }} sqmt
+                    lot</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

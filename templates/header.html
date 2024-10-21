@@ -1,0 +1,22 @@
+{% load static %}
+<header class="header">
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="{% url 'buy' %}"
+                    class="nav__link">Buy</a></li>
+            <li class="nav__item"><a href="{% url 'sell' %}"
+                    class="nav__link">Sell</a></li>
+            <li class="nav__item"><a href="{% url 'rent' %}"
+                    class="nav__link">Rent</a></li>
+        </ul>
+        <div class="logo-main">
+            <a href="{% url 'home' %}">
+                <img src="{% static 'Images/RealHomeLogo.png' %}" alt="RealHome"
+                    class="logo-main__image">
+            </a>
+        </div>
+        <div class="sign-in">
+            <a href="{% url 'auth:register' %}" class="sign-in__link">Sign in</a>
+        </div>
+    </nav>
+</header>
