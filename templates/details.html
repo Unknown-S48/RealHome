@@ -4,25 +4,21 @@
 {% block title %}RealHome - Home{% endblock %}
 
 {% block content %}
+<script src="/static/JS/map.js"></script>
+
 <div class="property-detail">
     <div class="property-images">
-        <img src="{{ property.image.url }}"
-            alt="Property Image"
-            class="main-image">
+        <img src="{{ property.image.url }}" alt="Property Image" class="main-image">
         <div class="image-thumbnails">
-            <img src="{{ property.image.url }}"
-                alt="Thumbnail 1">
-            <img src="{{ property.image.url }}"
-                alt="Thumbnail 2">
-            <img src="{{ property.image.url }}"
-                alt="Thumbnail 3">
+            <img src="{{ property.image.url }}" alt="Thumbnail 1">
+            <img src="{{ property.image.url }}" alt="Thumbnail 2">
+            <img src="{{ property.image.url }}" alt="Thumbnail 3">
         </div>
     </div>
 
     <div class="property-info">
         <h1 class="property-price">R{{ property.price|floatformat:0 }}</h1>
-        <p class="property-address">{{ property.address }}, {{ property.city }},
-            {{ property.state }} {{ property.zip_code }}</p>
+        <p class="property-address">{{ property.address }}, {{ property.city }}, {{ property.state }} {{ property.zip_code }}</p>
 
         <div class="property-stats">
             <span class="stat">{{ property.bedrooms }} beds</span>
@@ -47,15 +43,16 @@
             </div>
             <div class="detail-item">
                 <span class="detail-icon">🏗️</span>
-                <span class="detail-label">Built in {{ property.year_built }}
-                </span>
+                <span class="detail-label">Built in {{ property.year_built }}</span>
             </div>
             <div class="detail-item">
                 <span class="detail-icon">📏</span>
-                <span class="detail-label">{{ property.lot_size }} sqmt
-                    lot</span>
+                <span class="detail-label">{{ property.lot_size }} sqmt lot</span>
             </div>
         </div>
     </div>
 </div>
+
+<div id="map"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5YDEZWkQng9YLQRl4eLvldFRMlW9qZ8k&callback=initMap" async defer></script>
 {% endblock %}

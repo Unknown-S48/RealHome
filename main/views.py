@@ -101,3 +101,16 @@ def search(request):
 
     return render(request, 'search_results.html', context)
 
+def add_property(request):
+    if request.method == 'POST':
+        form = PropertyForm(request.POST, request.FILES)
+        if form.is_valid():
+            property_instance = form.save(commit=False)
+            property_instance.latitude = request.POST.get('latitude')
+            property_instance.longitude = request.POST.get('longitude')
+            property_instance.save()
+            return redirect('property_list')
+    else:
+        form = PropertyForm()
+    user_properties = Property.objects.filter(owner=request.user)
+    return render(request, 'Sell_Page.html', {'form': form, 'user_properties': user_properties})

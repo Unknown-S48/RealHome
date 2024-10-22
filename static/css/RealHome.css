@@ -558,3 +558,10 @@ body {
 .search-criteria h2 {
     margin-top: 0;
 }
+
+/* Maps Leave it a ID Sal jy die map aan die regte kant sit\*/
+#map {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+}

@@ -5,7 +5,7 @@
 {% block content %}
 <div class="dashboard">
     <h1>Welcome, {{ user.first_name }}!</h1>
-    
+
     <div class="dashboard-stats">
         <div class="stat-box">
             <h3>Total Properties</h3>
@@ -14,9 +14,9 @@
         <div class="stat-box">
             <h3>Property Types</h3>
             <ul>
-            {% for type in property_types %}
+                {% for type in property_types %}
                 <li>{{ type.property_type }}: {{ type.count }}</li>
-            {% endfor %}
+                {% endfor %}
             </ul>
         </div>
     </div>
@@ -24,15 +24,15 @@
     <div class="recent-properties">
         <h2>Recent Properties</h2>
         <ul>
-        {% for property in recent_properties %}
+            {% for property in recent_properties %}
             <li>
                 <a href="{% url 'details' property.id %}">
                     {{ property.title }} - {{ property.address }}
                 </a>
             </li>
-        {% empty %}
+            {% empty %}
             <li>No properties listed yet.</li>
-        {% endfor %}
+            {% endfor %}
         </ul>
     </div>
 

@@ -947,3 +947,6 @@ Traceback (most recent call last):
 django.urls.exceptions.NoReverseMatch: Reverse for 'details' with arguments '('',)' not found. 1 pattern(s) tried: ['property/(?P<property_id>[0-9]+)/\\Z']
 INFO 2024-10-21 19:00:26,202 views Login attempt for username: aweawe@gmail.com
 INFO 2024-10-21 19:00:26,894 views Successful login for username: aweawe@gmail.com
+INFO 2024-10-22 15:03:35,862 autoreload Watching for file changes with StatReloader
+INFO 2024-10-22 15:05:37,963 views Login attempt for username: aweawe@gmail.com
+INFO 2024-10-22 15:05:38,706 views Successful login for username: aweawe@gmail.com
