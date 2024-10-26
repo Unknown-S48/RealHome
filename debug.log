@@ -950,3 +950,29 @@ INFO 2024-10-21 19:00:26,894 views Successful login for username: aweawe@gmail.c
 INFO 2024-10-22 15:03:35,862 autoreload Watching for file changes with StatReloader
 INFO 2024-10-22 15:05:37,963 views Login attempt for username: aweawe@gmail.com
 INFO 2024-10-22 15:05:38,706 views Successful login for username: aweawe@gmail.com
+INFO 2024-10-24 13:10:07,407 autoreload Watching for file changes with StatReloader
+INFO 2024-10-26 14:44:19,978 autoreload Watching for file changes with StatReloader
+INFO 2024-10-26 14:44:33,908 views Login attempt for username: aweawe@gmail.com
+INFO 2024-10-26 14:44:34,593 views Successful login for username: aweawe@gmail.com
+INFO 2024-10-26 14:54:31,293 autoreload C:\Users\ignat\Documents\GitHub\RealHome\realtors\admin.py changed, reloading.
+INFO 2024-10-26 14:54:31,948 autoreload Watching for file changes with StatReloader
+INFO 2024-10-26 14:58:32,732 autoreload C:\Users\ignat\Documents\GitHub\RealHome\RealHome\settings.py changed, reloading.
+INFO 2024-10-26 14:58:33,398 autoreload Watching for file changes with StatReloader
+INFO 2024-10-26 14:59:05,324 autoreload C:\Users\ignat\Documents\GitHub\RealHome\RealHome\settings.py changed, reloading.
+INFO 2024-10-26 14:59:05,971 autoreload Watching for file changes with StatReloader
+INFO 2024-10-26 15:14:15,642 autoreload C:\Users\ignat\Documents\GitHub\RealHome\RealHome\settings.py changed, reloading.
+INFO 2024-10-26 15:14:16,483 autoreload Watching for file changes with StatReloader
+INFO 2024-10-26 15:20:04,893 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\urls.py changed, reloading.
+INFO 2024-10-26 15:20:05,559 autoreload Watching for file changes with StatReloader
+INFO 2024-10-26 15:22:07,309 autoreload C:\Users\ignat\Documents\GitHub\RealHome\realtors\urls.py changed, reloading.
+INFO 2024-10-26 15:22:07,940 autoreload Watching for file changes with StatReloader
+INFO 2024-10-26 15:22:20,767 autoreload C:\Users\ignat\Documents\GitHub\RealHome\main\urls.py changed, reloading.
+INFO 2024-10-26 15:22:21,403 autoreload Watching for file changes with StatReloader
+INFO 2024-10-26 15:24:29,305 views Login attempt for username: aweawe@gmail.com
+INFO 2024-10-26 15:24:29,992 views Successful login for username: aweawe@gmail.com
+INFO 2024-10-26 17:28:09,011 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\views.py changed, reloading.
+INFO 2024-10-26 17:28:09,704 autoreload Watching for file changes with StatReloader
+INFO 2024-10-26 17:28:28,904 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\urls.py changed, reloading.
+INFO 2024-10-26 17:28:29,526 autoreload Watching for file changes with StatReloader
+INFO 2024-10-26 17:31:27,069 views Login attempt for username: aweawe@gmail.com
+INFO 2024-10-26 17:31:27,752 views Successful login for username: aweawe@gmail.com

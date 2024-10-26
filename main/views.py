@@ -114,3 +114,46 @@ def add_property(request):
         form = PropertyForm()
     user_properties = Property.objects.filter(owner=request.user)
     return render(request, 'Sell_Page.html', {'form': form, 'user_properties': user_properties})
+
+from django.http import JsonResponse
+from django.contrib.auth.decorators import login_required
+from .models import Property, Favorite
+
+@login_required
+def toggle_favorite(request, property_id):
+    try:
+        property = Property.objects.get(id=property_id)
+        favorite, created = Favorite.objects.get_or_create(
+            user=request.user,
+            property=property
+        )
+        
+        if not created:
+            favorite.delete()
+            is_favorite = False
+        else:
+            is_favorite = True
+            
+        return JsonResponse({
+            'success': True,
+            'is_favorite': is_favorite,
+            'favorites_count': property.favorites_count
+        })
+    except Property.DoesNotExist:
+        return JsonResponse({
+            'success': False,
+            'error': 'Property not found'
+        }, status=404)
+    except Exception as e:
+        return JsonResponse({
+            'success': False,
+            'error': str(e)
+        }, status=400)
+
+@login_required
+def favorite_properties(request):
+    favorites = Favorite.objects.filter(user=request.user).select_related('property')
+    context = {
+        'favorites': favorites
+    }
+    return render(request, 'favorite_properties.html', context)

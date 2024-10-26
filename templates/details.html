@@ -26,11 +26,6 @@
             <span class="stat">{{ property.square_meters }} sqft</span>
         </div>
 
-        <div class="action-buttons">
-            <button class="request-tour">Request a tour</button>
-            <button class="contact-agent">Contact an agent</button>
-        </div>
-
         <div class="estimated-payment">
             <p>Est. payment: R{{ estimated_payment|floatformat:0 }}/mo</p>
             <a href="#" class="get-pre-qualified">Get pre-qualified</a>
@@ -53,6 +48,99 @@
     </div>
 </div>
 
+<!-- Contact Agent Modal -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeContactModal()">&times;</span>
+        <h2>Contact Agent</h2>
+        <form id="contactForm" method="POST" action="{% url 'realtors:contact' %}">
+            {% csrf_token %}
+            <input type="hidden" name="property_id" value="{{ property.id }}">
+            
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required {% if user.is_authenticated %}value="{{ user.get_full_name }}"{% endif %}>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required {% if user.is_authenticated %}value="{{ user.email }}"{% endif %}>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required {% if user.is_authenticated %}value="{{ user.phone }}"{% endif %}>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required>I am interested in {{ property.address }}.</textarea>
+            </div>
+            
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </div>
+</div>
+
 <div id="map"></div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5YDEZWkQng9YLQRl4eLvldFRMlW9qZ8k&callback=initMap" async defer></script>
+
+<!-- Add this JavaScript at the end of your template -->
+<script>
+    function openContactModal() {
+        document.getElementById('contactModal').style.display = 'block';
+    }
+
+    function closeContactModal() {
+        document.getElementById('contactModal').style.display = 'none';
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+        const modal = document.getElementById('contactModal');
+        if (event.target == modal) {
+            closeContactModal();
+        }
+    }
+
+    // Form submission handling
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const form = this;
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-CSRFToken': formData.get('csrfmiddlewaretoken')
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                showMessage('Message sent successfully!', 'success');
+                closeContactModal();
+            } else {
+                showMessage(data.message || 'Error sending message.', 'error');
+            }
+        })
+        .catch(error => {
+            showMessage('Error sending message.', 'error');
+        });
+    });
+
+    function showMessage(message, type) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `alert alert-${type}`;
+        messageDiv.textContent = message;
+        
+        document.querySelector('.property-detail').insertAdjacentElement('beforebegin', messageDiv);
+        
+        setTimeout(() => {
+            messageDiv.remove();
+        }, 5000);
+    }
+</script>
 {% endblock %}

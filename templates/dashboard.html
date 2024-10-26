@@ -1,43 +1,116 @@
-
 {% extends "base.html" %}
 {% load static %}
-
 {% block content %}
+
 <div class="dashboard">
-    <h1>Welcome, {{ user.first_name }}!</h1>
-
     <div class="dashboard-stats">
-        <div class="stat-box">
-            <h3>Total Properties</h3>
-            <p>{{ total_properties }}</p>
-        </div>
-        <div class="stat-box">
-            <h3>Property Types</h3>
-            <ul>
-                {% for type in property_types %}
-                <li>{{ type.property_type }}: {{ type.count }}</li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-
-    <div class="recent-properties">
-        <h2>Recent Properties</h2>
-        <ul>
-            {% for property in recent_properties %}
-            <li>
-                <a href="{% url 'details' property.id %}">
-                    {{ property.title }} - {{ property.address }}
+        <div class="dashboard-header">
+            <h1 class="dashboard-welcome">Welcome, {{ user.first_name }}!</h1>
+            <div class="dashboard-actions-top">
+                <a href="{% url 'auth:logout' %}" class="logout-btn">
+                    <span class="logout-icon">↪</span> Logout
                 </a>
-            </li>
-            {% empty %}
-            <li>No properties listed yet.</li>
-            {% endfor %}
-        </ul>
+            </div>
+        </div>
+
+        <div class="dashboard-stats">
+            <div class="stat-box">
+                <h3>Your Properties</h3>
+                <div class="stat-number">{{ total_properties }}</div>
+                <div class="stat-details">
+                    {% for type in property_types %}
+                    <div class="stat-item">
+                        {{ type.property_type }}: {{ type.count }}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="stat-box">
+                <h3>Favorites</h3>
+                <div class="stat-number">{{ favorite_count }}</div>
+                <div class="stat-details">For Sale: {{ favorites_sale_count
+                    }}</div>
+                <div class="stat-details">For Rent: {{ favorites_rent_count
+                    }}</div>
+            </div>
+        </div>
+
+        <!-- Recent Properties Section -->
+        <div class="recent-properties">
+            <h2>Recent Properties</h2>
+            <div class="property-grid">
+                {% for property in recent_properties %}
+                <div class="grid-item">
+                    {% if property.image %}
+                    <img src="{{ property.image.url }}"
+                        alt="{{ property.address }}"
+                        class="property-image">
+                    {% else %}
+                    <img src="{% static 'default-property-image.jpg' %}"
+                        alt="Default Property Image" class="property-image">
+                    {% endif %}
+
+                    <div class="property-price">R{{ property.price }}</div>
+                    <div class="property-details">
+                        <p>{{ property.address }}</p>
+                        <p>{{ property.bedrooms }} beds | {{ property.bathrooms
+                            }}
+                            baths</p>
+                    </div>
+                    <a href="{% url 'details' property.id %}"
+                        class="property-button">View Details</a>
+                </div>
+                {% empty %}
+                <p>No properties listed yet.</p>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Favorites Section -->
+        <div class="recent-properties">
+            <h2>Saved Properties</h2>
+            <div class="property-grid">
+                {% for favorite in favorite_properties %}
+                <div class="grid-item">
+                    {% if favorite.property.image %}
+                    <img src="{{ favorite.property.image.url }}"
+                        alt="{{ favorite.property.address }}"
+                        class="property-image">
+                    {% else %}
+                    <img src="{% static 'default-property-image.jpg' %}"
+                        alt="Default Property Image" class="property-image">
+                    {% endif %}
+
+                    <div class="property-price">R{{ favorite.property.price
+                        }}</div>
+                    <div class="property-details">
+                        <p>{{ favorite.property.address }}</p>
+                        <p>{{ favorite.property.bedrooms }} beds | {{
+                            favorite.property.bathrooms }} baths</p>
+                    </div>
+                    <div class="button-group">
+                        <a href="{% url 'details' favorite.property.id %}"
+                            class="property-button">View Details</a>
+                        <button
+                            class="favorite-button active"
+                            data-property-id="{{ favorite.property.id }}"
+                            onclick="toggleFavorite(this)">♥</button>
+                    </div>
+                </div>
+                {% empty %}
+                <p>No saved properties yet.</p>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="dashboard-actions">
+            <a href="{% url 'sell' %}" class="btn">List a New Property</a>
+            {% if favorite_count > 5 %}
+            <a href="{% url 'favorite-properties' %}" class="btn">View All Saved
+                Properties</a>
+            {% endif %}
+        </div>
     </div>
 
-    <div class="dashboard-actions">
-        <a href="{% url 'sell' %}" class="btn">List a New Property</a>
-    </div>
-</div>
-{% endblock %}
+    {% endblock %}

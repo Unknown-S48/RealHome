@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
 from  user import  views as user_vies
 
@@ -13,5 +13,8 @@ urlpatterns = [
     path('contact-us/', views.contactUs, name='contactUs'),
     path('cookies/', views.contactUs, name='cookies'),
     path('privacy-policy/', views.privacyPolicy, name='privacy'),
-    path('search/', views.search, name='search'), 
+    path('search/', views.search, name='search'),
+    path('property/<int:property_id>/toggle-favorite/', views.toggle_favorite, name='toggle-favorite'),
+    path('favorites/', views.favorite_properties, name='favorite-properties'),
+    path('realtors/', include('realtors.urls', namespace='realtors')),
 ]

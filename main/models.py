@@ -35,6 +35,11 @@ class Property(models.Model):
     longitude = models.DecimalField(max_digits=9, decimal_places=6, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
 
+
+    @property
+    def favorites_count(self):
+        return self.favorited_by.count()
+
     
     def save(self, *args, **kwargs):
         if self.image:
@@ -45,5 +50,18 @@ class Property(models.Model):
             output.seek(0)
             self.image = ContentFile(output.read(), name=self.image.name)
         super().save(*args, **kwargs)
+
+# models.py - Add to your existing models.py
+class Favorite(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='user_favorites')
+    property = models.ForeignKey('Property', on_delete=models.CASCADE, related_name='property_favorites')
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = ('user', 'property')  # Prevents duplicate favorites
+        ordering = ['-created_at']
+
+    def __str__(self):
+        return f"{self.user.username} - {self.property.address}"
 
     

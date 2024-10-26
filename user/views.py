@@ -9,8 +9,9 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Count
 from .models import CustomUser
 from django.urls import reverse
-from main.models import Property  
+from main.models import Property, Favorite  
 import logging
+from django.contrib import messages
 
 # Set up logger for debugging
 logger = logging.getLogger(__name__)
@@ -111,15 +112,31 @@ def register_view(request):
     # This line should never be reached due to @require_http_methods, but keep it for completeness
     return JsonResponse({'success': False, 'message': 'Invalid request method'}, status=405)
 
-
-# Dashboard View
 @login_required
 def dashboard(request):
     user = request.user
+    
+    # Get base property queries
+    user_properties = Property.objects.filter(owner=user)
+    user_favorites = Favorite.objects.filter(user=user).select_related('property')
+
     context = {
         'user': user,
-        'total_properties': Property.objects.filter(owner=user).count(),
-        'recent_properties': Property.objects.filter(owner=user).order_by('-created_at')[:5],
-        'property_types': Property.objects.filter(owner=user).values('property_type').annotate(count=Count('property_type')),
+        # Existing context
+        'total_properties': user_properties.count(),
+        'recent_properties': user_properties.order_by('-created_at')[:5],
+        'property_types': user_properties.values('property_type').annotate(count=Count('property_type')),
+        
+        # New favorite-related context
+        'favorite_properties': user_favorites[:5],  # Get 5 most recent favorites
+        'favorite_count': user_favorites.count(),
+        'favorites_sale_count': user_favorites.filter(property__listing_type='sale').count(),
+        'favorites_rent_count': user_favorites.filter(property__listing_type='rent').count(),
     }
     return render(request, 'dashboard.html', context)
+
+
+def logout_view(request):
+    logout(request)
+    messages.success(request, 'You have been successfully logged out.')
+    return redirect('home')

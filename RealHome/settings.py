@@ -68,6 +68,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'user',
     'main',
+    'realtors',
     
 ]
 
@@ -171,5 +172,6 @@ print(f"STATIC_ROOT: {STATIC_ROOT}")
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 DEBUG = True
+
 
 
