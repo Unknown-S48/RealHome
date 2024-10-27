@@ -976,3 +976,6 @@ INFO 2024-10-26 17:28:28,904 autoreload C:\Users\ignat\Documents\GitHub\RealHome
 INFO 2024-10-26 17:28:29,526 autoreload Watching for file changes with StatReloader
 INFO 2024-10-26 17:31:27,069 views Login attempt for username: aweawe@gmail.com
 INFO 2024-10-26 17:31:27,752 views Successful login for username: aweawe@gmail.com
+INFO 2024-10-27 21:57:20,579 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-27 22:24:51,013 log Not Found: /accounts/login/
+WARNING 2024-10-27 22:25:32,441 log Not Found: /dashboard/

@@ -3,19 +3,26 @@
 
 {% block title %}RealHome - Contact us{% endblock %}
 {% block content %}
+<div class="contact-us">
 <h1>Contact Us</h1>
 <p>We're here to help! If you have any questions, concerns, or feedback, please don't hesitate to reach out to us.</p>
 <form method="post">
     {% csrf_token %}
+    <center>
     <label for="name">Name:</label>
+    <br>
     <input type="text" id="name" name="name" required>
-
+    <br>
     <label for="email">Email:</label>
+    <br>
     <input type="email" id="email" name="email" required>
-
+    <br>
     <label for="message">Message:</label>
+    <br>
     <textarea id="message" name="message" required></textarea>
-
+    <br>
     <button type="submit">Send</button>
+</center>
 </form>
+</div>
 {% endblock %}
