@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const formData = new FormData(this);
 
-        fetch('/auth/register/', {  // Make sure this URL matches your Django URL configuration
+        fetch('{% url "auth:register" %}', {  // Make sure this URL matches your Django URL configuration
             method: 'POST',
             body: formData,
             headers: {

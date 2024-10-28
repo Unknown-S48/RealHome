@@ -102,7 +102,10 @@ def register_view(request):
             login(request, user)
 
             # Return success response
-            return JsonResponse({'success': True, 'redirect_url': '/dashboard/'})
+            return JsonResponse({
+                'success': True, 
+                'redirect_url': reverse('auth:dashboard')
+            })
 
         except Exception as e:
             # Log the exception for server-side debugging

@@ -36,37 +36,6 @@
             </div>
         </div>
 
-        <!-- Recent Properties Section -->
-        <div class="recent-properties">
-            <h2>Recent Properties</h2>
-            <div class="property-grid">
-                {% for property in recent_properties %}
-                <div class="grid-item">
-                    {% if property.image %}
-                    <img src="{{ property.image.url }}"
-                        alt="{{ property.address }}"
-                        class="property-image">
-                    {% else %}
-                    <img src="{% static 'default-property-image.jpg' %}"
-                        alt="Default Property Image" class="property-image">
-                    {% endif %}
-
-                    <div class="property-price">R{{ property.price }}</div>
-                    <div class="property-details">
-                        <p>{{ property.address }}</p>
-                        <p>{{ property.bedrooms }} beds | {{ property.bathrooms
-                            }}
-                            baths</p>
-                    </div>
-                    <a href="{% url 'details' property.id %}"
-                        class="property-button">View Details</a>
-                </div>
-                {% empty %}
-                <p>No properties listed yet.</p>
-                {% endfor %}
-            </div>
-        </div>
-
         <!-- Favorites Section -->
         <div class="recent-properties">
             <h2>Saved Properties</h2>

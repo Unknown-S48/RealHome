@@ -993,3 +993,20 @@ WARNING 2024-10-28 15:35:14,957 views Failed login attempt for username: Wian33@
 WARNING 2024-10-28 15:35:14,957 log Bad Request: /auth/login/
 INFO 2024-10-28 15:38:14,429 autoreload C:\Users\wians\Documents\GitHub\RealHome\main\urls.py changed, reloading.
 INFO 2024-10-28 15:38:15,000 autoreload Watching for file changes with StatReloader
+INFO 2024-10-28 15:46:10,740 autoreload Watching for file changes with StatReloader
+INFO 2024-10-28 15:48:50,183 views Login attempt for username: aweawe@gmail.com
+INFO 2024-10-28 15:48:50,877 views Successful login for username: aweawe@gmail.com
+WARNING 2024-10-28 15:50:38,608 log Bad Request: /property/1/favorite/
+WARNING 2024-10-28 15:55:31,064 log Bad Request: /property/1/favorite/
+WARNING 2024-10-28 15:56:37,979 log Bad Request: /property/1/favorite/
+WARNING 2024-10-28 15:56:40,125 log Bad Request: /property/1/favorite/
+INFO 2024-10-28 16:03:34,980 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\views.py changed, reloading.
+INFO 2024-10-28 16:03:35,684 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-28 16:04:11,449 log Not Found: /auth/register/dashboard/
+WARNING 2024-10-28 16:04:11,490 log Not Found: /favicon.ico
+WARNING 2024-10-28 16:06:42,634 log Not Found: /auth/register/dashboard/
+WARNING 2024-10-28 16:06:49,080 log Bad Request: /auth/register/
+WARNING 2024-10-28 16:07:04,613 log Not Found: /auth/register/dashboard/
+INFO 2024-10-28 16:10:14,530 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\views.py changed, reloading.
+INFO 2024-10-28 16:10:15,240 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-28 16:13:34,617 log Bad Request: /auth/register/
