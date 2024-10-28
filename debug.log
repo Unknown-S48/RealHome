@@ -987,3 +987,11 @@ INFO 2024-10-28 15:01:40,456 autoreload C:\Users\wians\Documents\GitHub\RealHome
 INFO 2024-10-28 15:01:41,068 autoreload Watching for file changes with StatReloader
 INFO 2024-10-28 15:02:32,130 autoreload Watching for file changes with StatReloader
 WARNING 2024-10-28 15:02:39,506 log Not Found: /accounts/login/
+INFO 2024-10-28 15:04:32,796 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-28 15:06:43,311 log Not Found: /dashboard/
+WARNING 2024-10-28 15:06:45,456 log Forbidden (CSRF token from POST incorrect.): /auth/register/
+WARNING 2024-10-28 15:06:46,292 log Forbidden (CSRF token from POST incorrect.): /auth/register/
+WARNING 2024-10-28 15:06:47,059 log Forbidden (CSRF token from POST incorrect.): /auth/register/
+WARNING 2024-10-28 15:06:50,340 log Forbidden (CSRF token from POST incorrect.): /auth/register/
+WARNING 2024-10-28 15:07:18,778 log Forbidden (CSRF token from POST incorrect.): /auth/register/
+WARNING 2024-10-28 15:07:25,665 log Forbidden (CSRF token from POST incorrect.): /auth/register/
