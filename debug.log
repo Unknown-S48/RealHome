@@ -984,3 +984,12 @@ INFO 2024-10-28 11:03:44,389 views Login attempt for username: aweawe@gmail.com
 INFO 2024-10-28 11:03:45,090 views Successful login for username: aweawe@gmail.com
 INFO 2024-10-28 15:18:07,496 autoreload Watching for file changes with StatReloader
 INFO 2024-10-28 15:24:32,080 autoreload Watching for file changes with StatReloader
+INFO 2024-10-28 15:27:31,938 autoreload Watching for file changes with StatReloader
+INFO 2024-10-28 15:34:43,450 views Login attempt for username: Wian
+WARNING 2024-10-28 15:34:43,788 views Failed login attempt for username: Wian
+WARNING 2024-10-28 15:34:43,789 log Bad Request: /auth/login/
+INFO 2024-10-28 15:35:14,607 views Login attempt for username: Wian33@gmail.com
+WARNING 2024-10-28 15:35:14,957 views Failed login attempt for username: Wian33@gmail.com
+WARNING 2024-10-28 15:35:14,957 log Bad Request: /auth/login/
+INFO 2024-10-28 15:38:14,429 autoreload C:\Users\wians\Documents\GitHub\RealHome\main\urls.py changed, reloading.
+INFO 2024-10-28 15:38:15,000 autoreload Watching for file changes with StatReloader
