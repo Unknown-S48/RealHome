@@ -981,3 +981,9 @@ WARNING 2024-10-27 22:24:51,013 log Not Found: /accounts/login/
 WARNING 2024-10-27 22:25:32,441 log Not Found: /dashboard/
 INFO 2024-10-28 14:54:21,010 autoreload Watching for file changes with StatReloader
 WARNING 2024-10-28 14:58:58,392 log Not Found: /accounts/login/
+INFO 2024-10-28 15:00:44,509 autoreload C:\Users\wians\Documents\GitHub\RealHome\RealHome\settings.py changed, reloading.
+INFO 2024-10-28 15:00:45,104 autoreload Watching for file changes with StatReloader
+INFO 2024-10-28 15:01:40,456 autoreload C:\Users\wians\Documents\GitHub\RealHome\RealHome\settings.py changed, reloading.
+INFO 2024-10-28 15:01:41,068 autoreload Watching for file changes with StatReloader
+INFO 2024-10-28 15:02:32,130 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-28 15:02:39,506 log Not Found: /accounts/login/
