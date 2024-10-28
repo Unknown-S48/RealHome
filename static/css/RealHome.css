@@ -266,11 +266,12 @@ body {
     float: left;
     width: 50%;
 }
+
 .map {
     float: right;
     width: 40%;
     display: flex;
-    
+
 }
 
 .property-button {
@@ -356,9 +357,11 @@ body {
         margin-bottom: 20px;
     }
 }
+
 .search-result-title {
     padding: 0 5%;
 }
+
 .content-wrapper {
     display: flex;
     width: 100%;
@@ -370,6 +373,7 @@ body {
     background-position: center;
     background-attachment: fixed;
 }
+
 /* Media Queries */
 @media (max-width: 768px) {
     .header {
@@ -503,29 +507,38 @@ body {
 .policies {
     padding: 0% 5%;
 }
+
 .privacy-policy {
     padding: 0% 5%;
 }
+
 .about-us {
-    padding: 0% 5%;
+    padding: 0% 40%;
 }
+
 .contact-us {
     padding: 0% 30%;
 }
+
 .contact-us form {
     text-align: center;
     align-items: center;
 }
-.contact-us label, input, textarea {
+
+.contact-us label,
+input,
+textarea {
     margin: 1% 0;
     font-size: medium;
     width: 35%;
 }
-.contact-us button{
+
+.contact-us button {
     font-size: large;
     padding: 1% 2%;
     border-radius: 15%;
 }
+
 .contact-us textarea {
     height: 20%;
 }
@@ -700,6 +713,7 @@ body {
     color: #721c24;
     border: 1px solid #f5c6cb;
 }
+
 /* Update your dashboard.css */
 
 .dashboard {

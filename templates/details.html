@@ -18,6 +18,14 @@
 
     <div class="property-info">
         <h1 class="property-price">R{{ property.price|floatformat:0 }}</h1>
+        {% if user.is_authenticated %}
+            <button 
+                class="favorite-button {% if is_favorited %}favorited{% endif %}"
+                onclick="toggleFavorite({{ property.id }})"
+                aria-label="Add to favorites">
+                <span class="heart-icon">{% if is_favorited %}❤️{% else %}🤍{% endif %}</span>
+            </button>
+            {% endif %}
         <p class="property-address">{{ property.address }}, {{ property.city }}, {{ property.state }} {{ property.zip_code }}</p>
 
         <div class="property-stats">
@@ -86,6 +94,35 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5YDEZWkQng9YLQRl4eLvldFRMlW9qZ8k&callback=initMap" async defer></script>
 </div>
 <script>
+    
+    function toggleFavorite(propertyId) {
+        fetch(`/property/${propertyId}/favorite/`, {
+            method: 'POST',
+            headers: {
+                'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value,
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            const button = document.querySelector('.favorite-button');
+            const heartIcon = button.querySelector('.heart-icon');
+            
+            if (data.status === 'added') {
+                button.classList.add('favorited');
+                heartIcon.textContent = '❤️';
+                showMessage('Added to favorites', 'success');
+            } else {
+                button.classList.remove('favorited');
+                heartIcon.textContent = '🤍';
+                showMessage('Removed from favorites', 'success');
+            }
+        })
+        .catch(error => {
+            showMessage('Error updating favorites', 'error');
+        });
+    }
+
     function openContactModal() {
         document.getElementById('contactModal').style.display = 'block';
     }

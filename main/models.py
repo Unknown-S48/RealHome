@@ -51,7 +51,7 @@ class Property(models.Model):
             self.image = ContentFile(output.read(), name=self.image.name)
         super().save(*args, **kwargs)
 
-# models.py - Add to your existing models.py
+
 class Favorite(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='user_favorites')
     property = models.ForeignKey('Property', on_delete=models.CASCADE, related_name='property_favorites')

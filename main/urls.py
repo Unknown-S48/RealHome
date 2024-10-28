@@ -17,4 +17,5 @@ urlpatterns = [
     path('property/<int:property_id>/toggle-favorite/', views.toggle_favorite, name='toggle-favorite'),
     path('favorites/', views.favorite_properties, name='favorite-properties'),
     path('realtors/', include('realtors.urls', namespace='realtors')),
+    path('property/<int:property_id>/favorite/', views.toggle_favorite, name='toggle_favorite'),
 ]
