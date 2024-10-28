@@ -983,3 +983,7 @@ INFO 2024-10-28 11:02:48,444 autoreload Watching for file changes with StatReloa
 INFO 2024-10-28 11:03:44,389 views Login attempt for username: aweawe@gmail.com
 INFO 2024-10-28 11:03:45,090 views Successful login for username: aweawe@gmail.com
 INFO 2024-10-28 15:18:07,496 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-28 15:26:59,648 log Bad Request: /property/1/favorite/
+WARNING 2024-10-28 15:27:04,119 log Bad Request: /property/1/favorite/
+INFO 2024-10-28 15:34:27,571 autoreload C:\Users\ignat\Documents\GitHub\RealHome\main\urls.py changed, reloading.
+INFO 2024-10-28 15:34:28,309 autoreload Watching for file changes with StatReloader
