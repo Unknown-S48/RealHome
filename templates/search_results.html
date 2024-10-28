@@ -8,7 +8,7 @@
 <div class="content-wrapper">
     <div class="search-criteria">
         <h2>Search Criteria:</h2>
-        <p>Query: {{ query }}</p>
+        <p>Address: {{ query }}</p>
         <p>Listing Type: {{ listing_type|default:"All" }}</p>
         <p>Price Range: {% if min_price %}${{ min_price }}{% endif %} - {% if max_price %}${{ max_price }}{% endif %}</p>
         <p>Minimum Bedrooms: {{ bedrooms|default:"Any" }}</p>
