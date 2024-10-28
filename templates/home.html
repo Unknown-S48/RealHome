@@ -7,7 +7,9 @@
 <div class="main-content">
     <div class="search-container">
         <form action="{% url 'search' %}" method="GET">
+            <div class="search-bar">
             <input type="text" name="query" placeholder="Search by address, city, state, or zip code" value="{{ request.GET.query }}">
+        </div>
             <select name="listing_type">
                 <option value="">All types</option>
                 <option value="sale" {% if request.GET.listing_type == 'sale' %}selected{% endif %}>For Sale</option>
