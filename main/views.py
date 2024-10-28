@@ -39,7 +39,20 @@ def rent(request):
 
 def details(request, property_id):
     property = get_object_or_404(Property, id=property_id)
-    return render(request, 'details.html', {'property': property})
+    is_favorited = False
+    
+    if request.user.is_authenticated:
+        is_favorited = Favorite.objects.filter(
+            user=request.user,
+            property=property
+        ).exists()
+    
+    context = {
+        'property': property,
+        'is_favorited': is_favorited,
+    }
+    
+    return render(request, 'details.html', context)
 
 def contactUs(request):
     return render(request, 'Contact_us.html')
@@ -157,3 +170,6 @@ def favorite_properties(request):
         'favorites': favorites
     }
     return render(request, 'favorite_properties.html', context)
+
+
+
