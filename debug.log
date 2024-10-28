@@ -993,3 +993,4 @@ WARNING 2024-10-28 15:35:14,957 views Failed login attempt for username: Wian33@
 WARNING 2024-10-28 15:35:14,957 log Bad Request: /auth/login/
 INFO 2024-10-28 15:38:14,429 autoreload C:\Users\wians\Documents\GitHub\RealHome\main\urls.py changed, reloading.
 INFO 2024-10-28 15:38:15,000 autoreload Watching for file changes with StatReloader
+INFO 2024-10-28 15:44:39,549 autoreload Watching for file changes with StatReloader

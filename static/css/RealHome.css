@@ -11,7 +11,7 @@ body {
 }
 /* About Us */
 .about-us {
-    padding-left: 40%;
+    padding: 0 20%;
 }
 /* Header Styles */
 .header {
