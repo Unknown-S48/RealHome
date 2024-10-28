@@ -979,3 +979,5 @@ INFO 2024-10-26 17:31:27,752 views Successful login for username: aweawe@gmail.c
 INFO 2024-10-27 21:57:20,579 autoreload Watching for file changes with StatReloader
 WARNING 2024-10-27 22:24:51,013 log Not Found: /accounts/login/
 WARNING 2024-10-27 22:25:32,441 log Not Found: /dashboard/
+INFO 2024-10-28 14:54:21,010 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-28 14:58:58,392 log Not Found: /accounts/login/
