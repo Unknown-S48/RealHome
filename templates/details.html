@@ -19,13 +19,14 @@
     <div class="property-info">
         <h1 class="property-price">R{{ property.price|floatformat:0 }}</h1>
         {% if user.is_authenticated %}
-            <button 
-                class="favorite-button {% if is_favorited %}favorited{% endif %}"
-                onclick="toggleFavorite({{ property.id }})"
-                aria-label="Add to favorites">
-                <span class="heart-icon">{% if is_favorited %}❤️{% else %}🤍{% endif %}</span>
-            </button>
-            {% endif %}
+        <button 
+            class="favorite-button {% if is_favorited %}active{% endif %}"
+            onclick="toggleFavorite({{ property.id }})"
+            data-property-id="{{ property.id }}"
+            aria-label="Toggle favorite">
+            {% if is_favorited %}❤️{% else %}🤍{% endif %}
+        </button>
+        {% endif %}
         <p class="property-address">{{ property.address }}, {{ property.city }}, {{ property.state }} {{ property.zip_code }}</p>
 
         <div class="property-stats">
@@ -94,33 +95,77 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5YDEZWkQng9YLQRl4eLvldFRMlW9qZ8k&callback=initMap" async defer></script>
 </div>
 <script>
+
+    function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
     
     function toggleFavorite(propertyId) {
+        const csrftoken = getCookie('csrftoken');
+        
         fetch(`/property/${propertyId}/favorite/`, {
             method: 'POST',
             headers: {
-                'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value,
+                'X-CSRFToken': csrftoken,
                 'Content-Type': 'application/json'
-            }
+            },
+            mode: 'same-origin'  // Important for CSRF protection
         })
-        .then(response => response.json())
-        .then(data => {
-            const button = document.querySelector('.favorite-button');
-            const heartIcon = button.querySelector('.heart-icon');
-            
-            if (data.status === 'added') {
-                button.classList.add('favorited');
-                heartIcon.textContent = '❤️';
-                showMessage('Added to favorites', 'success');
-            } else {
-                button.classList.remove('favorited');
-                heartIcon.textContent = '🤍';
-                showMessage('Removed from favorites', 'success');
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
             }
+            return response.json();
+        })
+        .then(data => {
+            const button = document.querySelector(`.favorite-button[data-property-id="${propertyId}"]`);
+            if (!button) return;
+    
+            if (data.status === 'added') {
+                button.classList.add('active');
+                button.innerHTML = '❤️';
+            } else {
+                button.classList.remove('active');
+                button.innerHTML = '🤍';
+                
+                // If on dashboard, remove the property card
+                if (window.location.pathname.includes('dashboard')) {
+                    const propertyCard = button.closest('.grid-item');
+                    if (propertyCard) {
+                        propertyCard.style.opacity = '0';
+                        setTimeout(() => {
+                            propertyCard.remove();
+                            updateFavoriteCount(-1);
+                        }, 300);
+                    }
+                }
+            }
+            
+            showAlert(data.message, 'success');
         })
         .catch(error => {
-            showMessage('Error updating favorites', 'error');
+            console.error('Error:', error);
+            showAlert('Error updating favorites. Please try again.', 'error');
         });
+    }
+
+    function updateFavoriteCount(change) {
+        const countElement = document.querySelector('.stat-box .stat-number');
+        if (countElement) {
+            const currentCount = parseInt(countElement.textContent);
+            countElement.textContent = currentCount + change;
+        }
     }
 
     function openContactModal() {

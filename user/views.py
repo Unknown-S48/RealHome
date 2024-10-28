@@ -119,25 +119,23 @@ def register_view(request):
 def dashboard(request):
     user = request.user
     
-    # Get base property queries
+    # Get user's properties
     user_properties = Property.objects.filter(owner=user)
-    user_favorites = Favorite.objects.filter(user=user).select_related('property')
-
+    
+    # Get favorite properties with all related property data
+    favorite_properties = Favorite.objects.select_related('property').filter(
+        user=user
+    ).order_by('-created_at')
+    
     context = {
         'user': user,
-        # Existing context
         'total_properties': user_properties.count(),
-        'recent_properties': user_properties.order_by('-created_at')[:5],
-        'property_types': user_properties.values('property_type').annotate(count=Count('property_type')),
-        
-        # New favorite-related context
-        'favorite_properties': user_favorites[:5],  # Get 5 most recent favorites
-        'favorite_count': user_favorites.count(),
-        'favorites_sale_count': user_favorites.filter(property__listing_type='sale').count(),
-        'favorites_rent_count': user_favorites.filter(property__listing_type='rent').count(),
+        'property_types': user_properties.values('property_type')
+                         .annotate(count=Count('property_type')),
+        'favorite_properties': favorite_properties[:5],
     }
+    
     return render(request, 'dashboard.html', context)
-
 
 def logout_view(request):
     logout(request)

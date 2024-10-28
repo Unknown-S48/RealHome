@@ -131,37 +131,41 @@ def add_property(request):
 from django.http import JsonResponse
 from django.contrib.auth.decorators import login_required
 from .models import Property, Favorite
+from django.views.decorators.http import require_POST
 
 @login_required
+@require_POST
 def toggle_favorite(request, property_id):
     try:
-        property = Property.objects.get(id=property_id)
-        favorite, created = Favorite.objects.get_or_create(
+        property = get_object_or_404(Property, id=property_id)
+        favorite = Favorite.objects.filter(
             user=request.user,
             property=property
         )
         
-        if not created:
+        if favorite.exists():
             favorite.delete()
-            is_favorite = False
+            return JsonResponse({
+                'status': 'removed',
+                'message': 'Property removed from favorites',
+                'is_favorited': False
+            })
         else:
-            is_favorite = True
+            Favorite.objects.create(
+                user=request.user,
+                property=property
+            )
+            return JsonResponse({
+                'status': 'added',
+                'message': 'Property added to favorites',
+                'is_favorited': True
+            })
             
-        return JsonResponse({
-            'success': True,
-            'is_favorite': is_favorite,
-            'favorites_count': property.favorites_count
-        })
-    except Property.DoesNotExist:
-        return JsonResponse({
-            'success': False,
-            'error': 'Property not found'
-        }, status=404)
     except Exception as e:
         return JsonResponse({
-            'success': False,
-            'error': str(e)
-        }, status=400)
+            'status': 'error',
+            'message': str(e)
+        }, status=500)
 
 @login_required
 def favorite_properties(request):

@@ -26,60 +26,54 @@
                 </div>
             </div>
 
-            <div class="stat-box">
-                <h3>Favorites</h3>
-                <div class="stat-number">{{ favorite_count }}</div>
-                <div class="stat-details">For Sale: {{ favorites_sale_count
-                    }}</div>
-                <div class="stat-details">For Rent: {{ favorites_rent_count
-                    }}</div>
-            </div>
-        </div>
+            <!-- Favorites Section -->
+            <div class="recent-properties">
+                <h2>Saved Properties</h2>
+                <div class="property-grid">
+                    {% for favorite in favorite_properties %}
+                    <div class="grid-item">
+                        {% if favorite.property.image %}
+                        <img src="{{ favorite.property.image.url }}"
+                            alt="{{ favorite.property.address }}"
+                            class="property-image">
+                        {% else %}
+                        <img src="{% static 'default-property-image.jpg' %}"
+                            alt="Default Property Image"
+                            class="property-image">
+                        {% endif %}
 
-        <!-- Favorites Section -->
-        <div class="recent-properties">
-            <h2>Saved Properties</h2>
-            <div class="property-grid">
-                {% for favorite in favorite_properties %}
-                <div class="grid-item">
-                    {% if favorite.property.image %}
-                    <img src="{{ favorite.property.image.url }}"
-                        alt="{{ favorite.property.address }}"
-                        class="property-image">
-                    {% else %}
-                    <img src="{% static 'default-property-image.jpg' %}"
-                        alt="Default Property Image" class="property-image">
-                    {% endif %}
-
-                    <div class="property-price">R{{ favorite.property.price
-                        }}</div>
-                    <div class="property-details">
-                        <p>{{ favorite.property.address }}</p>
-                        <p>{{ favorite.property.bedrooms }} beds | {{
-                            favorite.property.bathrooms }} baths</p>
+                        <div class="property-price">
+                            R{{ favorite.property.price }}
+                        </div>
+                        <div class="property-details">
+                            <p>{{ favorite.property.address }}</p>
+                            <p>
+                                {{ favorite.property.bedrooms }} beds |
+                                {{favorite.property.bathrooms }} baths
+                            </p>
+                        </div>
+                        <div class="button-group">
+                            <a href="{% url 'details' favorite.property.id %}"
+                                class="property-button">View Details</a>
+                            <button class="favorite-button active"
+                                data-property-id="{{ favorite.property.id }}"
+                                onclick="toggleFavorite(this)">♥</button>
+                        </div>
                     </div>
-                    <div class="button-group">
-                        <a href="{% url 'details' favorite.property.id %}"
-                            class="property-button">View Details</a>
-                        <button
-                            class="favorite-button active"
-                            data-property-id="{{ favorite.property.id }}"
-                            onclick="toggleFavorite(this)">♥</button>
-                    </div>
+                    {% empty %}
+                    <p>No saved properties yet.</p>
+                    {% endfor %}
                 </div>
-                {% empty %}
-                <p>No saved properties yet.</p>
-                {% endfor %}
+            </div>
+
+            <div class="dashboard-actions">
+                <a href="{% url 'sell' %}" class="btn">List a New Property</a>
+                {% if favorite_count > 5 %}
+                <a href="{% url 'favorite-properties' %}" class="btn">View All
+                    Saved
+                    Properties</a>
+                {% endif %}
             </div>
         </div>
 
-        <div class="dashboard-actions">
-            <a href="{% url 'sell' %}" class="btn">List a New Property</a>
-            {% if favorite_count > 5 %}
-            <a href="{% url 'favorite-properties' %}" class="btn">View All Saved
-                Properties</a>
-            {% endif %}
-        </div>
-    </div>
-
-    {% endblock %}
+        {% endblock %}
