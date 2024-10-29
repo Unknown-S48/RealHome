@@ -994,3 +994,11 @@ WARNING 2024-10-28 15:35:14,957 log Bad Request: /auth/login/
 INFO 2024-10-28 15:38:14,429 autoreload C:\Users\wians\Documents\GitHub\RealHome\main\urls.py changed, reloading.
 INFO 2024-10-28 15:38:15,000 autoreload Watching for file changes with StatReloader
 INFO 2024-10-28 15:44:39,549 autoreload Watching for file changes with StatReloader
+INFO 2024-10-29 14:17:25,198 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-29 14:17:35,630 log Not Found: /images/property_images/1000004676.jpg
+WARNING 2024-10-29 14:17:39,167 log Not Found: /accounts/login/
+WARNING 2024-10-29 14:17:39,219 log Not Found: /favicon.ico
+WARNING 2024-10-29 14:17:42,676 log Not Found: /images/property_images/1000004676.jpg
+INFO 2024-10-29 14:17:56,879 views Login attempt for username: aweawe@gmail.com
+INFO 2024-10-29 14:17:57,605 views Successful login for username: aweawe@gmail.com
+WARNING 2024-10-29 14:18:06,428 log Not Found: /images/property_images/1000004676.jpg
