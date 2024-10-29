@@ -994,19 +994,13 @@ WARNING 2024-10-28 15:35:14,957 log Bad Request: /auth/login/
 INFO 2024-10-28 15:38:14,429 autoreload C:\Users\wians\Documents\GitHub\RealHome\main\urls.py changed, reloading.
 INFO 2024-10-28 15:38:15,000 autoreload Watching for file changes with StatReloader
 INFO 2024-10-28 15:44:39,549 autoreload Watching for file changes with StatReloader
-INFO 2024-10-28 16:21:15,692 autoreload Watching for file changes with StatReloader
-WARNING 2024-10-28 16:21:53,732 log Bad Request: /property/1/favorite/
-INFO 2024-10-28 16:22:55,233 autoreload C:\Users\ignat\Documents\GitHub\RealHome\main\views.py changed, reloading.
-INFO 2024-10-28 16:22:55,904 autoreload Watching for file changes with StatReloader
-INFO 2024-10-28 16:23:06,661 autoreload C:\Users\ignat\Documents\GitHub\RealHome\main\views.py changed, reloading.
-INFO 2024-10-28 16:23:07,329 autoreload Watching for file changes with StatReloader
-INFO 2024-10-28 16:33:04,009 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\views.py changed, reloading.
-INFO 2024-10-28 16:33:04,630 autoreload Watching for file changes with StatReloader
-INFO 2024-10-28 17:35:29,503 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\views.py changed, reloading.
-INFO 2024-10-28 17:35:30,161 autoreload Watching for file changes with StatReloader
-INFO 2024-10-28 17:35:43,143 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\views.py changed, reloading.
-INFO 2024-10-28 17:35:43,769 autoreload Watching for file changes with StatReloader
-INFO 2024-10-28 17:36:13,578 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\views.py changed, reloading.
-INFO 2024-10-28 17:36:14,216 autoreload Watching for file changes with StatReloader
-INFO 2024-10-28 17:36:20,872 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\views.py changed, reloading.
-INFO 2024-10-28 17:36:21,498 autoreload Watching for file changes with StatReloader
+INFO 2024-10-29 14:17:25,198 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-29 14:17:35,630 log Not Found: /images/property_images/1000004676.jpg
+WARNING 2024-10-29 14:17:39,167 log Not Found: /accounts/login/
+WARNING 2024-10-29 14:17:39,219 log Not Found: /favicon.ico
+WARNING 2024-10-29 14:17:42,676 log Not Found: /images/property_images/1000004676.jpg
+INFO 2024-10-29 14:17:56,879 views Login attempt for username: aweawe@gmail.com
+INFO 2024-10-29 14:17:57,605 views Successful login for username: aweawe@gmail.com
+WARNING 2024-10-29 14:18:06,428 log Not Found: /images/property_images/1000004676.jpg
+INFO 2024-10-29 14:19:38,701 autoreload C:\Users\ignat\Documents\GitHub\RealHome\main\views.py changed, reloading.
+INFO 2024-10-29 14:19:39,452 autoreload Watching for file changes with StatReloader
