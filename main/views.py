@@ -12,8 +12,11 @@ def buy(request):
 def home(request):
     return render(request, 'home.html')
 
-@login_required
+@login_required(login_url='auth:login')
 def sell(request):
+    if not request.user.is_authenticated:
+        return redirect('auth:login')
+        
     if request.method == 'POST':
         form = PropertyForm(request.POST, request.FILES)
         if form.is_valid():

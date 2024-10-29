@@ -7,12 +7,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const formData = new FormData(this);
 
-        fetch('{% url "auth:register" %}', {  // Make sure this URL matches your Django URL configuration
+        fetch('/auth/register/', {  // Make sure this URL matches your Django URL configuration
             method: 'POST',
             body: formData,
             headers: {
-                'X-CSRFToken': formData.get('csrfmiddlewaretoken')
-            }
+                'X-CSRFToken': formData.get('csrfmiddlewaretoken'),
+                'X-Requested-With': 'XMLHttpRequest'
+            },
+            credentials: 'same-origin'
         })
             .then(response => {
                 if (!response.ok) {
