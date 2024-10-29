@@ -30,7 +30,9 @@
             <a href="{% url 'details' property.id %}" class="property-button">View Details</a>
         </div>
         {% empty %}
+        <div class="Not-found">
         <p>No properties found matching your search criteria.</p>
+    </div>
         {% endfor %}
     </div>
 </div>

@@ -1,9 +1,17 @@
 /* Global Styles */
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
 body {
     background-color: white;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 6.74rem;
+    box-sizing: inherit;
 }
 
 /* Contact-us */
@@ -162,6 +170,13 @@ body {
     font-size: 25px;
 }
 
+footer {
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
 /* Footer Styles */
 .footer {
     background-color: white;
@@ -270,12 +285,20 @@ body {
     color: #666;
     margin-bottom: 10px;
     float: left;
-    width: 50%;
+    width: 45%;
 }
 
 .map {
     float: right;
-    width: 40%;
+    width: 45%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.Not-found {
+    font-size: x-large;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    
 }
 
 .property-button {
@@ -441,12 +464,14 @@ body {
     width: 800px;
     height: 600px;
     border-radius: 8px;
+    margin-left: 20%;
 }
 
 .image-thumbnails {
     display: flex;
     gap: 10px;
     margin-top: 10px;
+    margin-left: 20%;
 }
 
 .image-thumbnails img {
@@ -698,6 +723,7 @@ textarea {
     height: 400px;
     width: 100%;
     margin-top: 20px;
+
 }
 
 .modal {
@@ -888,6 +914,10 @@ textarea {
 
 .property-info {
     padding: 1rem;
+    margin-top: 150%;
+    width: 100%;
+    margin-left: 240%;
+    height: 50px;
 }
 
 .property-info h3 {

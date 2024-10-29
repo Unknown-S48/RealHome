@@ -1004,3 +1004,14 @@ INFO 2024-10-29 14:17:57,605 views Successful login for username: aweawe@gmail.c
 WARNING 2024-10-29 14:18:06,428 log Not Found: /images/property_images/1000004676.jpg
 INFO 2024-10-29 14:19:38,701 autoreload C:\Users\ignat\Documents\GitHub\RealHome\main\views.py changed, reloading.
 INFO 2024-10-29 14:19:39,452 autoreload Watching for file changes with StatReloader
+INFO 2024-10-29 14:26:51,398 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-29 14:27:33,807 log Not Found: /accounts/login/
+INFO 2024-10-29 14:34:02,091 views Login attempt for username: aweawe080@gmail.com
+WARNING 2024-10-29 14:34:02,432 views Failed login attempt for username: aweawe080@gmail.com
+WARNING 2024-10-29 14:34:02,433 log Bad Request: /auth/login/
+WARNING 2024-10-29 14:34:56,717 log Not Found: /auth/register/{% url "auth:register" %}
+WARNING 2024-10-29 14:35:11,626 log Not Found: /auth/register/{% url "auth:register" %}
+INFO 2024-10-29 14:35:30,490 views Login attempt for username: Frikkie02@gmail.com
+WARNING 2024-10-29 14:35:30,843 views Failed login attempt for username: Frikkie02@gmail.com
+WARNING 2024-10-29 14:35:30,844 log Bad Request: /auth/login/
+WARNING 2024-10-29 15:08:07,602 log Not Found: /accounts/login/
