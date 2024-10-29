@@ -6,7 +6,7 @@
 {% block content %}
 <script src="/static/JS/map.js"></script>
 
-<div class="property-detail">
+<div class="property-details">
     <div class="property-images">
         <img src="{{ property.image.url }}" alt="Property Image" class="main-image">
         <div class="image-thumbnails">
@@ -90,9 +90,10 @@
         </form>
     </div>
 </div>
-
-<div id="map" class="map">
+<div class="map">
+<div id="map">
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5YDEZWkQng9YLQRl4eLvldFRMlW9qZ8k&callback=initMap" async defer></script>
+</div>
 </div>
 <script>
 
