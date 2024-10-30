@@ -832,11 +832,25 @@ textarea {
 }
 
 /* Update your dashboard.css */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-left: 1%;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
 
 .dashboard {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    padding-bottom: 6.74em;
 }
 
 .dashboard-welcome {
@@ -845,8 +859,7 @@ textarea {
     margin-bottom: 2rem;
     border-bottom: 2px solid #eee;
     padding-bottom: 1rem;
-}
-.dashboard-welcome h1 {
+    text-align: left;
     width: 50%;
 }
 
@@ -881,11 +894,8 @@ textarea {
     font-size: 0.9rem;
 }
 .recent-properties {
-    display: flex;
-    flex-direction: row;
     width: 98%;
     margin: 0 auto;
-    padding: 10px;
     background-size: cover;
     background-position: center;
 
@@ -1030,6 +1040,23 @@ textarea {
     align-items: center;
     margin-top: 10px;
 }
+.btn-logout {
+    display: inline-block;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: #ff4444;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 2%;
+
+    }
+
 
 .favorite-button {
     background: white;
@@ -1299,10 +1326,6 @@ textarea {
         margin: 0 auto;
         padding: 20px;
     }
-.dash-button {
-    float: right;
-    width: 200px;
-}
 
     .dashboard-welcome {
         color: #333;
@@ -1815,21 +1838,6 @@ textarea {
 
 }
 
-    .logout-btn {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        padding: 10px 20px;
-        background-color: #ff4444;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        font-size: 16px;
-        cursor: pointer;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-    }
-
     .logout-btn:hover {
         background-color: #ff2222;
     }
@@ -1864,7 +1872,6 @@ textarea {
         gap: 1rem;
         align-items: flex-start;
     }
-
 
 
     /* Responsive design */

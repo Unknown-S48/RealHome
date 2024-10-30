@@ -6,11 +6,10 @@
     <div class="dashboard-stats">
         <div class="dashboard-header">
             <h1 class="dashboard-welcome">Welcome, {{ user.first_name }}!</h1>
-        </div>
-        <div class="dash-button">
-        <a href="{% url 'auth:logout' %}" class="logout-btn">
-            <button><span class="logout-icon">↪</span> Logout</button>
-        </a>
+            
+            <a href="{% url 'auth:logout' %}" class="btn-logout">
+                <span class="logout-icon">↪</span> Logout
+            </a>
     </div>
 
         
@@ -70,7 +69,7 @@
             <div class="dashboard-actions">
                 <a href="{% url 'main:sell' %}" class="btn">List a New Property</a>
                 {% if favorite_count > 5 %}
-                <a href="{% url 'main:favorite-properties' %}" class="btn">View All
+                <a href="{% url 'main:favorite-properties' %}" ">View All
                     Saved
                     Properties</a>
                 {% endif %}
