@@ -1015,3 +1015,24 @@ INFO 2024-10-29 14:35:30,490 views Login attempt for username: Frikkie02@gmail.c
 WARNING 2024-10-29 14:35:30,843 views Failed login attempt for username: Frikkie02@gmail.com
 WARNING 2024-10-29 14:35:30,844 log Bad Request: /auth/login/
 WARNING 2024-10-29 15:08:07,602 log Not Found: /accounts/login/
+INFO 2024-10-29 15:27:13,379 autoreload Watching for file changes with StatReloader
+INFO 2024-10-29 15:30:17,348 views Login attempt for username: aweawe02@gmail.com
+WARNING 2024-10-29 15:30:17,691 views Failed login attempt for username: aweawe02@gmail.com
+WARNING 2024-10-29 15:30:17,691 log Bad Request: /auth/login/
+INFO 2024-10-29 15:42:19,566 views Login attempt for username: Frikkie02@gmail.com
+WARNING 2024-10-29 15:42:19,897 views Failed login attempt for username: Frikkie02@gmail.com
+WARNING 2024-10-29 15:42:19,897 log Bad Request: /auth/login/
+INFO 2024-10-29 15:42:32,664 views Login attempt for username: Frikkie02@gmail.com
+WARNING 2024-10-29 15:42:32,989 views Failed login attempt for username: Frikkie02@gmail.com
+WARNING 2024-10-29 15:42:32,989 log Bad Request: /auth/login/
+INFO 2024-10-29 15:42:36,252 views Login attempt for username: Frikkie02@gmail.com
+WARNING 2024-10-29 15:42:36,576 views Failed login attempt for username: Frikkie02@gmail.com
+WARNING 2024-10-29 15:42:36,577 log Bad Request: /auth/login/
+WARNING 2024-10-29 15:42:49,233 log Not Found: /auth/admin/
+WARNING 2024-10-29 15:43:14,473 log Not Found: /index
+INFO 2024-10-29 15:52:03,728 views Login attempt for username: Wian@gmail.com
+INFO 2024-10-29 15:52:04,076 views Successful login for username: Wian@gmail.com
+INFO 2024-10-29 15:54:55,181 views Login attempt for username: Wian@gmail.com
+INFO 2024-10-29 15:54:55,516 views Successful login for username: Wian@gmail.com
+INFO 2024-10-29 16:26:24,937 views Login attempt for username: Wian@gmail.com
+INFO 2024-10-29 16:26:25,283 views Successful login for username: Wian@gmail.com

@@ -6,14 +6,14 @@
     <div class="dashboard-stats">
         <div class="dashboard-header">
             <h1 class="dashboard-welcome">Welcome, {{ user.first_name }}!</h1>
-            <div class="dashboard-actions-top">
-                <a href="{% url 'auth:logout' %}" class="logout-btn">
-                    <span class="logout-icon">↪</span> Logout
-                </a>
-            </div>
         </div>
+        <div class="dash-button">
+        <a href="{% url 'auth:logout' %}" class="logout-btn">
+            <button><span class="logout-icon">↪</span> Logout</button>
+        </a>
+    </div>
 
-        <div class="dashboard-stats">
+        
             <div class="stat-box">
                 <h3>Your Properties</h3>
                 <div class="stat-number">{{ total_properties }}</div>
@@ -25,10 +25,11 @@
                     {% endfor %}
                 </div>
             </div>
-
+            <div class="dashboard-stats">
             <!-- Favorites Section -->
+            <h2>Saved Properties</h2>
             <div class="recent-properties">
-                <h2>Saved Properties</h2>
+                
                 <div class="property-grid">
                     {% for favorite in favorite_properties %}
                     <div class="grid-item">
@@ -75,5 +76,6 @@
                 {% endif %}
             </div>
         </div>
+    </div>
 
         {% endblock %}
