@@ -4,7 +4,7 @@
 {% block content %}
 <div class="container">
     <h2>Register for RealHome</h2>
-    <form id="registerForm" method="POST">
+    <form id="registerForm" method="POST" action="{% url 'auth:register' %}">
         {% csrf_token %}
         <div class="form-group">
             <label for="name">Full Name:</label>

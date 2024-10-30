@@ -1,37 +1,52 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('registerForm');
+    // Show/hide realtor fields
+    const userTypeSelect = document.getElementById('userType');
+    const realtorFields = document.getElementById('realtorFields');
+
+    userTypeSelect.addEventListener('change', function () {
+        realtorFields.style.display = this.value === 'realtor' ? 'block' : 'none';
+    });
+
+    // Form submission
+    const registerForm = document.getElementById('registerForm');
     const messageDiv = document.getElementById('message');
 
-    form.addEventListener('submit', function (e) {
+    registerForm.addEventListener('submit', async function (e) {
         e.preventDefault();
+        messageDiv.innerHTML = ''; // Clear previous messages
 
-        const formData = new FormData(this);
+        const url = this.action || window.location.href;
 
-        fetch('/auth/register/', {  // Make sure this URL matches your Django URL configuration
-            method: 'POST',
-            body: formData,
-            headers: {
-                'X-CSRFToken': formData.get('csrfmiddlewaretoken'),
-                'X-Requested-With': 'XMLHttpRequest'
-            },
-            credentials: 'same-origin'
-        })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                if (data.success) {
-                    window.location.href = data.redirect_url;
-                } else {
-                    messageDiv.textContent = data.message || 'An error occurred during registration.';
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                messageDiv.textContent = 'An error occurred. Please try again later.';
+        try {
+            const formData = new FormData(this);
+            const response = await fetch(url, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value,
+                },
+                credentials: 'same-origin' // Include cookies
             });
+
+            // Parse the JSON response
+            const data = await response.json();
+
+            // Check if the response was successful
+            if (!response.ok) {
+                throw new Error(data.message || 'Registration failed');
+            }
+
+            // Handle successful registration
+            if (data.success) {
+                messageDiv.innerHTML = '<div class="success-message">Registration successful! Redirecting...</div>';
+                window.location.href = data.redirect_url;
+            } else {
+                messageDiv.innerHTML = `<div class="error-message">${data.message}</div>`;
+            }
+
+        } catch (error) {
+            console.error('Registration error:', error);
+            messageDiv.innerHTML = `<div class="error-message">${error.message || 'An error occurred during registration. Please try again.'}</div>`;
+        }
     });
 });

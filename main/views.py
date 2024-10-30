@@ -7,10 +7,10 @@ from django.db.models import Q
 def buy(request):
     properties = Property.objects.all
     context = {'properties':properties}
-    return render(request, 'Buy_Page.html', context)
+    return render(request, 'pages/Buy_Page.html', context)
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'pages/home.html')
 
 @login_required(login_url='auth:login')
 def sell(request):
@@ -23,7 +23,7 @@ def sell(request):
             property = form.save(commit=False)
             property.owner = request.user
             property.save()
-            return redirect('details', property_id=property.id)
+            return redirect('main:details', property_id=property.id)
     else:
         form = PropertyForm()
     
@@ -33,12 +33,12 @@ def sell(request):
         'form': form,
         'user_properties': user_properties,
     }
-    return render(request, 'sell_page.html', context)
+    return render(request, 'pages/sell_page.html', context)
 
 def rent(request):
     properties = Property.objects.all
     context = {'properties':properties}
-    return render(request, 'Rent_Page.html', context=context)
+    return render(request, 'pages/Rent_Page.html', context=context)
 
 def details(request, property_id):
     property = get_object_or_404(Property, id=property_id)
@@ -55,22 +55,22 @@ def details(request, property_id):
         'is_favorited': is_favorited,
     }
     
-    return render(request, 'details.html', context)
+    return render(request, 'pages/details.html', context)
 
 def contactUs(request):
-    return render(request, 'Contact_us.html')
+    return render(request, 'small_pages/Contact_us.html')
 
 def privacyPolicy(request):
-    return render(request, 'Privacy_Policy.html')
+    return render(request, 'small_pages/Privacy_Policy.html')
 
 def terms(request):
-    return render(request, 'Terms_&_Conditions.html')
+    return render(request, 'small_pages/Terms_&_Conditions.html')
 
 def cookies(request):
-    return render(request, 'Cookie_Policy.html')
+    return render(request, 'small_pages/Cookie_Policy.html')
 
 def about(request):
-    return render(request, 'About_us.html')
+    return render(request, 'small_pages/About_us.html')
 
 def search(request):
     query = request.GET.get('query', '')
@@ -115,7 +115,7 @@ def search(request):
         'bathrooms': bathrooms,
     }
 
-    return render(request, 'search_results.html', context)
+    return render(request, 'pages/search_results.html', context)
 
 def add_property(request):
     if request.method == 'POST':
@@ -129,7 +129,7 @@ def add_property(request):
     else:
         form = PropertyForm()
     user_properties = Property.objects.filter(owner=request.user)
-    return render(request, 'Sell_Page.html', {'form': form, 'user_properties': user_properties})
+    return render(request, 'pages/Sell_Page.html', {'form': form, 'user_properties': user_properties})
 
 from django.http import JsonResponse
 from django.contrib.auth.decorators import login_required

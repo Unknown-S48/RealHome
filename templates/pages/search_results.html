@@ -24,10 +24,10 @@
             <img src="{% static 'images/default-property-image.jpg' %}" alt="Default Property Image" class="property-image">
             {% endif %}
             
-            <h2 class="property-price">${{ property.price|floatformat:0 }}</h2>
+            <h2 class="property-price">R{{ property.price|floatformat:0 }}</h2>
             <p>{{ property.bedrooms }} bd | {{ property.bathrooms }} ba | {{ property.square_meters }} sqm</p>
             <p>{{ property.address }}</p>
-            <a href="{% url 'details' property.id %}" class="property-button">View Details</a>
+            <a href="{% url 'main:details' property.id %}" class="property-button">View Details</a>
         </div>
         {% empty %}
         <div class="Not-found">
