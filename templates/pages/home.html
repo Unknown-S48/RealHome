@@ -6,7 +6,7 @@
 {% block content %}
 <div class="main-content">
     <div class="search-container">
-        <form action="{% url 'search' %}" method="GET">
+        <form action="{% url 'main:search' %}" method="GET">
             <div class="search-bar">
             <input type="text" name="query" placeholder="Search by address, city, state, or zip code" value="{{ request.GET.query }}">
         </div>

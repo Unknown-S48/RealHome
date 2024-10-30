@@ -53,7 +53,7 @@
                             </p>
                         </div>
                         <div class="button-group">
-                            <a href="{% url 'details' favorite.property.id %}"
+                            <a href="{% url 'main:details' favorite.property.id %}"
                                 class="property-button">View Details</a>
                             <button class="favorite-button active"
                                 data-property-id="{{ favorite.property.id }}"
@@ -67,9 +67,9 @@
             </div>
 
             <div class="dashboard-actions">
-                <a href="{% url 'sell' %}" class="btn">List a New Property</a>
+                <a href="{% url 'main:sell' %}" class="btn">List a New Property</a>
                 {% if favorite_count > 5 %}
-                <a href="{% url 'favorite-properties' %}" class="btn">View All
+                <a href="{% url 'main:favorite-properties' %}" class="btn">View All
                     Saved
                     Properties</a>
                 {% endif %}

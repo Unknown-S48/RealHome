@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ realtor.name }} - RealHome Agent Profile{% endblock %}
+
+{% block content %}
+<div class="realtor-profile">
+    <!-- Agent Header Section -->
+    <div class="realtor-header">
+        <div class="realtor-header__content">
+            <div class="realtor-header__image">
+                {% if realtor.photo %}
+                    <img src="{{ realtor.photo.url }}" alt="{{ realtor.name }}">
+                {% else %}
+                    <img src="{% static 'images/default-agent.jpg' %}" alt="{{ realtor.name }}">
+                {% endif %}
+            </div>
+            <div class="realtor-header__info">
+                <h1 class="realtor-header__name">
+                    {{ realtor.name }}
+                    {% if realtor.is_mvp %}
+                        <span class="mvp-badge">MVP Agent</span>
+                    {% endif %}
+                </h1>
+                <p class="realtor-header__title">Professional Real Estate Agent</p>
+                <div class="realtor-header__stats">
+                    <div class="stat-item">
+                        <span class="stat-value">{{ total_listings }}</span>
+                        <span class="stat-label">Total Listings</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">{{ sold_listings }}</span>
+                        <span class="stat-label">Properties Sold</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">{{ realtor.years_experience }}+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="realtor-contact">
+        <div class="contact-info">
+            {% if realtor.phone %}
+                <div class="contact-item">
+                    <i class="contact-icon">📞</i>
+                    <span>{{ realtor.phone }}</span>
+                </div>
+            {% endif %}
+            {% if realtor.email %}
+                <div class="contact-item">
+                    <i class="contact-icon">📧</i>
+                    <span>{{ realtor.email }}</span>
+                </div>
+            {% endif %}
+            {% if realtor.office_address %}
+                <div class="contact-item">
+                    <i class="contact-icon">📍</i>
+                    <span>{{ realtor.office_address }}</span>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- About Section -->
+    {% if realtor.description %}
+    <div class="realtor-about">
+        <h2>About {{ realtor.name }}</h2>
+        <p>{{ realtor.description }}</p>
+    </div>
+    {% endif %}
+
+    <!-- Active Listings Section -->
+    <div class="realtor-listings">
+        <h2>Active Listings</h2>
+        <div class="listings-grid">
+            {% for property in active_listings %}
+            <div class="property-card">
+                <div class="property-card__image">
+                    {% if property.image %}
+                        <img src="{{ property.image.url }}" alt="{{ property.address }}">
+                    {% else %}
+                        <img src="{% static 'images/default-property.jpg' %}" alt="Property">
+                    {% endif %}
+                </div>
+                <div class="property-card__content">
+                    <div class="property-card__price">R{{ property.price|floatformat:0 }}</div>
+                    <div class="property-card__details">
+                        <span>{{ property.bedrooms }} beds</span>
+                        <span>{{ property.bathrooms }} baths</span>
+                        <span>{{ property.square_meters }} sqft</span>
+                    </div>
+                    <div class="property-card__address">{{ property.address }}</div>
+                    <a href="{% url 'main:details' property.id %}" class="property-card__link">View Details</a>
+                </div>
+            </div>
+            {% empty %}
+            <p class="no-listings">No active listings available.</p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

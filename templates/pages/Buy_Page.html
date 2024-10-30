@@ -100,7 +100,7 @@
             <h1 class="property-price">R{{ property.price }}</h1>
             <p class="property-details">Bedrooms: {{ property.bedrooms }}</p>
             <p class="property-address">{{ property.address }}</p>
-            <a href="{% url 'details' property.id %}"
+            <a href="{% url 'main:details' property.id %}"
                 class="property-button">View
                 Details</a>
         </div>

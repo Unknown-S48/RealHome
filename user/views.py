@@ -12,13 +12,14 @@ from django.urls import reverse
 from main.models import Property, Favorite  
 import logging
 from django.contrib import messages
+from realtors.models import Realtor
 
 # Set up logger for debugging
 logger = logging.getLogger(__name__)
 
 # Home View
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'pages/home.html')
 
 # Login View
 @ensure_csrf_cookie
@@ -58,35 +59,40 @@ def register_view(request):
     if request.method == 'GET':
         return render(request, 'auth/register.html')
 
-    elif request.method == 'POST':
+    logger.info(f"Registration attempt with data: {request.POST}")
+    
+    try:
+        # Extract form data
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+        phone = request.POST.get('phone')
+        user_type = request.POST.get('userType')
+        license_number = request.POST.get('licenseNumber', '')
+
+        # Validate required fields
+        if not all([name, email, password, phone, user_type]):
+            return JsonResponse({
+                'success': False,
+                'message': 'All fields are required.'
+            }, status=400)
+
+        # Validate realtor fields
+        if user_type == 'realtor' and not license_number:
+            return JsonResponse({
+                'success': False,
+                'message': 'License number is required for realtors.'
+            }, status=400)
+
+        # Check if email exists
+        if CustomUser.objects.filter(email=email).exists():
+            return JsonResponse({
+                'success': False,
+                'message': 'Email already exists.'
+            }, status=400)
+
         try:
-            # Extract form data
-            name = request.POST.get('name')
-            email = request.POST.get('email')
-            password = request.POST.get('password')
-            phone = request.POST.get('phone')
-            user_type = request.POST.get('userType')
-            license_number = request.POST.get('licenseNumber')
-
-            # Validate input data
-            if not all([name, email, password, phone, user_type]):
-                return JsonResponse({'success': False, 'message': 'All fields are required.'}, status=400)
-
-            try:
-                validate_email(email)
-            except ValidationError:
-                return JsonResponse({'success': False, 'message': 'Invalid email address.'}, status=400)
-
-            if CustomUser.objects.filter(email=email).exists():
-                return JsonResponse({'success': False, 'message': 'Email already in use.'}, status=400)
-
-            if user_type not in ['customer', 'realtor']:
-                return JsonResponse({'success': False, 'message': 'Invalid user type.'}, status=400)
-
-            if user_type == 'realtor' and not license_number:
-                return JsonResponse({'success': False, 'message': 'License number is required for realtors.'}, status=400)
-
-            # Create new user
+            # Start with user creation
             user = CustomUser.objects.create_user(
                 username=email,
                 email=email,
@@ -94,26 +100,46 @@ def register_view(request):
                 first_name=name.split()[0],
                 last_name=' '.join(name.split()[1:]) if len(name.split()) > 1 else '',
                 phone=phone,
-                user_type=user_type,
-                license_number=license_number if user_type == 'realtor' else None
+                user_type=user_type
             )
 
-            # Log user in after successful registration
-            login(request, user)
+            # Create realtor profile if applicable
+            if user_type == 'realtor':
+                try:
+                    Realtor.objects.create(
+                        user=user,
+                        name=name,
+                        phone=phone,
+                        email=email,
+                        license_number=license_number,
+                        description='',  # Set a default empty description
+                    )
+                except Exception as e:
+                    logger.error(f"Error creating realtor profile: {str(e)}")
+                    user.delete()  # Rollback user creation
+                    raise
 
-            # Return success response
+            # Log user in
+            login(request, user)
+            
             return JsonResponse({
-                'success': True, 
+                'success': True,
                 'redirect_url': reverse('auth:dashboard')
             })
 
         except Exception as e:
-            # Log the exception for server-side debugging
-            logger.error(f"Error in register_view: {str(e)}")
-            return JsonResponse({'success': False, 'message': 'An unexpected error occurred. Please try again.'}, status=500)
+            logger.error(f"Error creating user: {str(e)}")
+            return JsonResponse({
+                'success': False,
+                'message': 'An error occurred while creating your account. Please try again.'
+            }, status=400)
 
-    # This line should never be reached due to @require_http_methods, but keep it for completeness
-    return JsonResponse({'success': False, 'message': 'Invalid request method'}, status=405)
+    except Exception as e:
+        logger.error(f"Unexpected error in registration: {str(e)}")
+        return JsonResponse({
+            'success': False,
+            'message': 'An unexpected error occurred.'
+        }, status=400)
 
 @login_required
 def dashboard(request):
@@ -135,9 +161,9 @@ def dashboard(request):
         'favorite_properties': favorite_properties[:5],
     }
     
-    return render(request, 'dashboard.html', context)
+    return render(request, 'pages/dashboard.html', context)
 
 def logout_view(request):
     logout(request)
     messages.success(request, 'You have been successfully logged out.')
-    return redirect('home')
+    return redirect('main:home')

@@ -57,44 +57,23 @@
     </div>
 </div>
 
-<!-- Contact Agent Modal -->
-<div id="contactModal" class="modal">
-    <div class="modal-content">
-        <span class="close-modal" onclick="closeContactModal()">&times;</span>
-        <h2>Contact Agent</h2>
-        <form id="contactForm" method="POST" action="{% url 'realtors:contact' %}">
-            {% csrf_token %}
-            <input type="hidden" name="property_id" value="{{ property.id }}">
-            
-            <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required {% if user.is_authenticated %}value="{{ user.get_full_name }}"{% endif %}>
-            </div>
-            
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required {% if user.is_authenticated %}value="{{ user.email }}"{% endif %}>
-            </div>
-            
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" required {% if user.is_authenticated %}value="{{ user.phone }}"{% endif %}>
-            </div>
-            
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required>I am interested in {{ property.address }}.</textarea>
-            </div>
-            
-            <button type="submit" class="submit-button">Send Message</button>
-        </form>
-    </div>
-</div>
+
 <div class="map">
 <div id="map">
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5YDEZWkQng9YLQRl4eLvldFRMlW9qZ8k&callback=initMap" async defer></script>
 </div>
 </div>
+{% if property.realtor %}
+        <div class="agent-info">
+            <span class="agent-label">Listed by:</span>
+            <a href="{% url 'realtors:realtor_profile' property.realtor.id %}" class="agent-link">
+                {{ property.realtor.name }}
+                {% if property.realtor.is_mvp %}
+                    <span class="mvp-badge">MVP</span>
+                {% endif %}
+            </a>
+        </div>
+        {% endif %}
 <script>
 
     function getCookie(name) {

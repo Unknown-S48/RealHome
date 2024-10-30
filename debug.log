@@ -1004,6 +1004,7 @@ INFO 2024-10-29 14:17:57,605 views Successful login for username: aweawe@gmail.c
 WARNING 2024-10-29 14:18:06,428 log Not Found: /images/property_images/1000004676.jpg
 INFO 2024-10-29 14:19:38,701 autoreload C:\Users\ignat\Documents\GitHub\RealHome\main\views.py changed, reloading.
 INFO 2024-10-29 14:19:39,452 autoreload Watching for file changes with StatReloader
+<<<<<<< Updated upstream
 INFO 2024-10-29 14:26:51,398 autoreload Watching for file changes with StatReloader
 WARNING 2024-10-29 14:27:33,807 log Not Found: /accounts/login/
 INFO 2024-10-29 14:34:02,091 views Login attempt for username: aweawe080@gmail.com
@@ -1015,3 +1016,1387 @@ INFO 2024-10-29 14:35:30,490 views Login attempt for username: Frikkie02@gmail.c
 WARNING 2024-10-29 14:35:30,843 views Failed login attempt for username: Frikkie02@gmail.com
 WARNING 2024-10-29 14:35:30,844 log Bad Request: /auth/login/
 WARNING 2024-10-29 15:08:07,602 log Not Found: /accounts/login/
+=======
+INFO 2024-10-29 14:26:31,828 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-29 14:26:42,173 log Not Found: /accounts/login/
+INFO 2024-10-29 14:29:01,041 views Login attempt for username: igie@gmail.com
+WARNING 2024-10-29 14:29:01,742 views Failed login attempt for username: igie@gmail.com
+WARNING 2024-10-29 14:29:01,742 log Bad Request: /auth/login/
+INFO 2024-10-29 14:29:15,641 views Login attempt for username: aweawe080@gmail.com
+WARNING 2024-10-29 14:29:16,334 views Failed login attempt for username: aweawe080@gmail.com
+WARNING 2024-10-29 14:29:16,334 log Bad Request: /auth/login/
+INFO 2024-10-29 14:29:17,157 views Login attempt for username: aweawe080@gmail.com
+WARNING 2024-10-29 14:29:17,849 views Failed login attempt for username: aweawe080@gmail.com
+WARNING 2024-10-29 14:29:17,849 log Bad Request: /auth/login/
+WARNING 2024-10-29 14:29:54,948 log Not Found: /auth/register/{% url "auth:register" %}
+INFO 2024-10-29 14:31:59,721 views Login attempt for username: aweawe@gmail.com
+INFO 2024-10-29 14:32:00,444 views Successful login for username: aweawe@gmail.com
+WARNING 2024-10-29 14:54:12,152 log Not Found: /auth/register/{% url "auth:register" %}
+INFO 2024-10-29 15:01:05,866 autoreload C:\Users\ignat\Documents\GitHub\RealHome\main\urls.py changed, reloading.
+INFO 2024-10-29 15:01:06,555 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-29 15:01:37,286 log Not Found: /auth/register/{% url "auth:register" %}
+WARNING 2024-10-29 15:04:02,492 log Not Found: /auth/register/{% url "auth:register" %}
+WARNING 2024-10-29 15:04:24,249 log Not Found: /auth/register/auth/register/
+INFO 2024-10-29 15:16:49,833 autoreload C:\Users\ignat\Documents\GitHub\RealHome\main\views.py changed, reloading.
+INFO 2024-10-29 15:16:50,574 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-29 15:18:52,550 log Not Found: /accounts/login/
+WARNING 2024-10-29 15:18:52,608 log Not Found: /favicon.ico
+WARNING 2024-10-29 15:18:56,394 log Not Found: /accounts/login/
+WARNING 2024-10-29 15:18:56,438 log Not Found: /favicon.ico
+INFO 2024-10-29 15:21:12,006 autoreload C:\Users\ignat\Documents\GitHub\RealHome\RealHome\settings.py changed, reloading.
+INFO 2024-10-29 15:21:12,720 autoreload Watching for file changes with StatReloader
+INFO 2024-10-29 15:21:31,839 autoreload C:\Users\ignat\Documents\GitHub\RealHome\main\views.py changed, reloading.
+INFO 2024-10-29 15:21:32,496 autoreload Watching for file changes with StatReloader
+>>>>>>> Stashed changes
+INFO 2024-10-29 15:26:09,427 autoreload Watching for file changes with StatReloader
+INFO 2024-10-29 15:30:10,775 views Login attempt for username: aweawe@gmail.com
+INFO 2024-10-29 15:30:11,486 views Successful login for username: aweawe@gmail.com
+INFO 2024-10-30 00:05:32,080 autoreload Watching for file changes with StatReloader
+INFO 2024-10-30 00:14:41,105 autoreload C:\Users\ignat\Documents\GitHub\RealHome\main\models.py changed, reloading.
+INFO 2024-10-30 00:14:41,743 autoreload Watching for file changes with StatReloader
+INFO 2024-10-30 00:14:57,697 autoreload C:\Users\ignat\Documents\GitHub\RealHome\main\models.py changed, reloading.
+INFO 2024-10-30 00:14:58,333 autoreload Watching for file changes with StatReloader
+INFO 2024-10-30 00:17:38,439 autoreload Watching for file changes with StatReloader
+ERROR 2024-10-30 00:17:46,628 log Internal Server Error: /buy/
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: main_property.realtor_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\Documents\GitHub\RealHome\main\views.py", line 10, in buy
+    return render(request, 'Buy_Page.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: main_property.realtor_id
+WARNING 2024-10-30 00:17:46,824 log Not Found: /favicon.ico
+INFO 2024-10-30 00:33:28,851 autoreload Watching for file changes with StatReloader
+ERROR 2024-10-30 00:33:31,980 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\engine.py", line 214, in select_template
+    raise TemplateDoesNotExist(", ".join(not_found))
+django.template.exceptions.TemplateDoesNotExist: header.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\Documents\GitHub\RealHome\main\views.py", line 13, in home
+    return render(request, 'pages/home.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: header.html
+ERROR 2024-10-30 00:34:14,156 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\engine.py", line 214, in select_template
+    raise TemplateDoesNotExist(", ".join(not_found))
+django.template.exceptions.TemplateDoesNotExist: basics:header.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\Documents\GitHub\RealHome\main\views.py", line 13, in home
+    return render(request, 'pages/home.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: basics:header.html
+ERROR 2024-10-30 00:34:35,959 log Internal Server Error: /buy/
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: main_property.realtor_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\Documents\GitHub\RealHome\main\views.py", line 10, in buy
+    return render(request, 'pages/Buy_Page.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: main_property.realtor_id
+ERROR 2024-10-30 00:35:58,760 log Internal Server Error: /buy/
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'pages'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\Documents\GitHub\RealHome\main\views.py", line 10, in buy
+    return render(request, 'pages/Buy_Page.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'pages' is not a registered namespace
+INFO 2024-10-30 00:38:16,744 autoreload C:\Users\ignat\Documents\GitHub\RealHome\main\urls.py changed, reloading.
+INFO 2024-10-30 00:38:17,350 autoreload Watching for file changes with StatReloader
+ERROR 2024-10-30 00:39:10,880 log Internal Server Error: /buy/
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: main_property.realtor_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\Documents\GitHub\RealHome\main\views.py", line 10, in buy
+    return render(request, 'pages/Buy_Page.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: main_property.realtor_id
+ERROR 2024-10-30 00:39:12,123 log Internal Server Error: /buy/
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: main_property.realtor_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\Documents\GitHub\RealHome\main\views.py", line 10, in buy
+    return render(request, 'pages/Buy_Page.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: main_property.realtor_id
+INFO 2024-10-30 00:40:47,915 autoreload Watching for file changes with StatReloader
+ERROR 2024-10-30 00:40:49,907 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\Documents\GitHub\RealHome\main\views.py", line 13, in home
+    return render(request, 'pages/home.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'search' not found. 'search' is not a valid view function or pattern name.
+ERROR 2024-10-30 00:41:45,034 log Internal Server Error: /buy/
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'pages'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\Documents\GitHub\RealHome\main\views.py", line 10, in buy
+    return render(request, 'pages/Buy_Page.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'pages' is not a registered namespace
+ERROR 2024-10-30 00:42:06,807 log Internal Server Error: /property/1/
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'realtors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\Documents\GitHub\RealHome\main\views.py", line 58, in details
+    return render(request, 'pages/details.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'realtors' is not a registered namespace
+ERROR 2024-10-30 00:42:53,322 log Internal Server Error: /rent/
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\Documents\GitHub\RealHome\main\views.py", line 41, in rent
+    return render(request, 'pages/Rent_Page.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'details' not found. 'details' is not a valid view function or pattern name.
+ERROR 2024-10-30 00:43:26,655 log Internal Server Error: /sell/
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\Documents\GitHub\RealHome\main\views.py", line 36, in sell
+    return render(request, 'pages/sell_page.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'details' not found. 'details' is not a valid view function or pattern name.
+ERROR 2024-10-30 00:43:53,352 log Internal Server Error: /auth/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\Documents\GitHub\RealHome\user\views.py", line 138, in dashboard
+    return render(request, 'dashboard.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dashboard.html
+INFO 2024-10-30 00:45:20,728 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\views.py changed, reloading.
+INFO 2024-10-30 00:45:21,397 autoreload Watching for file changes with StatReloader
+ERROR 2024-10-30 00:45:23,209 log Internal Server Error: /auth/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\Documents\GitHub\RealHome\user\views.py", line 138, in dashboard
+    return render(request, 'pages/dashboard.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'details' not found. 'details' is not a valid view function or pattern name.
+ERROR 2024-10-30 00:45:44,308 log Internal Server Error: /auth/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\Documents\GitHub\RealHome\user\views.py", line 138, in dashboard
+    return render(request, 'pages/dashboard.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'sell' not found. 'sell' is not a valid view function or pattern name.
+ERROR 2024-10-30 00:47:06,270 log Internal Server Error: /search/
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\Documents\GitHub\RealHome\main\views.py", line 118, in search
+    return render(request, 'pages/search_results.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'details' not found. 'details' is not a valid view function or pattern name.
+INFO 2024-10-30 00:56:32,427 autoreload C:\Users\ignat\Documents\GitHub\RealHome\main\models.py changed, reloading.
+INFO 2024-10-30 00:56:33,048 autoreload Watching for file changes with StatReloader
+INFO 2024-10-30 00:57:59,149 autoreload C:\Users\ignat\Documents\GitHub\RealHome\realtors\urls.py changed, reloading.
+INFO 2024-10-30 00:57:59,756 autoreload Watching for file changes with StatReloader
+INFO 2024-10-30 00:59:08,064 autoreload C:\Users\ignat\Documents\GitHub\RealHome\realtors\views.py changed, reloading.
+INFO 2024-10-30 00:59:08,740 autoreload Watching for file changes with StatReloader
+INFO 2024-10-30 00:59:44,421 autoreload C:\Users\ignat\Documents\GitHub\RealHome\realtors\views.py changed, reloading.
+INFO 2024-10-30 00:59:45,012 autoreload Watching for file changes with StatReloader
+INFO 2024-10-30 01:07:01,632 autoreload C:\Users\ignat\Documents\GitHub\RealHome\realtors\views.py changed, reloading.
+INFO 2024-10-30 01:07:02,262 autoreload Watching for file changes with StatReloader
+INFO 2024-10-30 01:07:22,533 autoreload C:\Users\ignat\Documents\GitHub\RealHome\realtors\views.py changed, reloading.
+INFO 2024-10-30 01:07:23,168 autoreload Watching for file changes with StatReloader
+INFO 2024-10-30 01:08:32,493 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\views.py changed, reloading.
+INFO 2024-10-30 01:08:33,086 autoreload Watching for file changes with StatReloader
+INFO 2024-10-30 01:08:57,486 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\views.py changed, reloading.
+INFO 2024-10-30 01:08:58,110 autoreload Watching for file changes with StatReloader
+ERROR 2024-10-30 01:13:17,829 log Internal Server Error: /auth/logout/
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\Documents\GitHub\RealHome\user\views.py", line 157, in logout_view
+    return redirect('home')
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+WARNING 2024-10-30 01:13:17,913 log Not Found: /favicon.ico
+INFO 2024-10-30 01:13:59,025 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\views.py changed, reloading.
+INFO 2024-10-30 01:13:59,710 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-30 01:14:23,165 log Bad Request: /auth/register/
+WARNING 2024-10-30 01:14:32,325 log Bad Request: /auth/register/
+INFO 2024-10-30 01:17:15,957 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\views.py changed, reloading.
+INFO 2024-10-30 01:17:16,569 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-30 01:17:21,252 log Bad Request: /auth/register/
+ERROR 2024-10-30 01:17:46,910 log Internal Server Error: /auth/register/
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\views\decorators\http.py", line 64, in inner
+    return func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\Documents\GitHub\RealHome\user\views.py", line 60, in register_view
+    return render(request, '/auth/register.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /auth/register.html
+ERROR 2024-10-30 01:18:10,064 log Internal Server Error: /auth/register/
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\views\decorators\http.py", line 64, in inner
+    return func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\Documents\GitHub\RealHome\user\views.py", line 60, in register_view
+    return render(request, '/auth/register.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /auth/register.html
+INFO 2024-10-30 01:18:30,574 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\views.py changed, reloading.
+INFO 2024-10-30 01:18:31,223 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-30 01:18:45,336 log Bad Request: /auth/register/
+WARNING 2024-10-30 01:19:00,123 log Bad Request: /auth/register/
+WARNING 2024-10-30 01:20:04,277 log Bad Request: /auth/register/
+WARNING 2024-10-30 01:20:23,031 log Bad Request: /auth/register/
+WARNING 2024-10-30 01:21:38,077 log Bad Request: /auth/register/
+INFO 2024-10-30 01:25:23,036 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\views.py changed, reloading.
+INFO 2024-10-30 01:25:23,637 autoreload Watching for file changes with StatReloader
+INFO 2024-10-30 01:25:56,724 views Received registration data for email: aweawe@gmail.com, user_type: customer
+WARNING 2024-10-30 01:25:56,725 log Bad Request: /auth/register/
+INFO 2024-10-30 11:13:18,580 autoreload Watching for file changes with StatReloader
+INFO 2024-10-30 11:13:37,442 views Received registration data for email: aweawe@gmail.com, user_type: realtor
+WARNING 2024-10-30 11:13:37,445 log Bad Request: /auth/register/
+INFO 2024-10-30 11:13:52,880 views Received registration data for email: aweawe1234@gmail.com, user_type: realtor
+ERROR 2024-10-30 11:13:53,566 views Error creating user: Realtor() got unexpected keyword arguments: 'user', 'license_number'
+WARNING 2024-10-30 11:13:53,572 log Bad Request: /auth/register/
+INFO 2024-10-30 11:15:49,574 views Received registration data for email: aweawe1234@gmail.com, user_type: realtor
+ERROR 2024-10-30 11:15:50,321 views Error creating user: Realtor() got unexpected keyword arguments: 'user', 'license_number'
+WARNING 2024-10-30 11:15:50,328 log Bad Request: /auth/register/
+INFO 2024-10-30 11:24:59,043 views Received registration data for email: aweawe1234@gmail.com, user_type: realtor
+ERROR 2024-10-30 11:24:59,722 views Error creating user: Realtor() got unexpected keyword arguments: 'user', 'license_number'
+WARNING 2024-10-30 11:24:59,732 log Bad Request: /auth/register/
+INFO 2024-10-30 11:28:10,273 autoreload C:\Users\ignat\Documents\GitHub\RealHome\realtors\models.py changed, reloading.
+INFO 2024-10-30 11:28:10,923 autoreload Watching for file changes with StatReloader
+INFO 2024-10-30 11:29:22,878 autoreload C:\Users\ignat\Documents\GitHub\RealHome\realtors\models.py changed, reloading.
+INFO 2024-10-30 11:29:23,538 autoreload Watching for file changes with StatReloader
+INFO 2024-10-30 11:30:33,237 autoreload Watching for file changes with StatReloader
+INFO 2024-10-30 11:33:39,198 autoreload Watching for file changes with StatReloader
+INFO 2024-10-30 11:34:11,362 views Registration attempt with data: <QueryDict: {'csrfmiddlewaretoken': ['CUhUpzQBRVdNVDbyPfbnBwJ4nRTNE6xsqvcGOxI2GGZDTZ0srKLiT1LX5I44nRWf'], 'name': ['Joe'], 'email': ['joe@gmail.com'], 'password': ['1234'], 'phone': ['0786896602'], 'userType': ['realtor'], 'licenseNumber': ['123']}>
+ERROR 2024-10-30 11:34:12,072 views Error creating realtor profile: Realtor() got unexpected keyword arguments: 'years_experience'
+ERROR 2024-10-30 11:34:12,079 views Error creating user: Realtor() got unexpected keyword arguments: 'years_experience'
+WARNING 2024-10-30 11:34:12,080 log Bad Request: /auth/register/
+INFO 2024-10-30 11:35:09,268 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\views.py changed, reloading.
+INFO 2024-10-30 11:35:09,934 autoreload Watching for file changes with StatReloader
+INFO 2024-10-30 11:35:14,534 views Registration attempt with data: <QueryDict: {'csrfmiddlewaretoken': ['CUhUpzQBRVdNVDbyPfbnBwJ4nRTNE6xsqvcGOxI2GGZDTZ0srKLiT1LX5I44nRWf'], 'name': ['Joe'], 'email': ['joe@gmail.com'], 'password': ['1234'], 'phone': ['0786896602'], 'userType': ['realtor'], 'licenseNumber': ['123']}>
+WARNING 2024-10-30 11:35:15,353 log Not Found: /dashboard/
+WARNING 2024-10-30 11:35:15,389 log Not Found: /favicon.ico
+INFO 2024-10-30 11:36:03,634 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\views.py changed, reloading.
+INFO 2024-10-30 11:36:04,292 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-30 11:36:05,285 log Not Found: /dashboard/
+INFO 2024-10-30 11:36:40,732 views Registration attempt with data: <QueryDict: {'csrfmiddlewaretoken': ['Hf5cEOQaZll6ppj6H9DrSqIpoImz2BsiNJoi5fM6ONNlpqsSEo2UGIX89XD3pVG2'], 'name': ['wimp'], 'email': ['wimp@gmail.com'], 'password': ['1234'], 'phone': ['1234567890'], 'userType': ['realtor'], 'licenseNumber': ['123']}>
+WARNING 2024-10-30 11:36:41,503 log Not Found: /auth/register/auth/dashboard/
+WARNING 2024-10-30 11:36:41,543 log Not Found: /favicon.ico
+INFO 2024-10-30 11:37:31,526 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\views.py changed, reloading.
+INFO 2024-10-30 11:37:32,231 autoreload Watching for file changes with StatReloader
+INFO 2024-10-30 11:37:36,987 views Registration attempt with data: <QueryDict: {'csrfmiddlewaretoken': ['kHvSC8ej2RlLMGXjOYgD8cim9turHX2sXLEas1H6phfT2CO5Ft6Wa1DqzRSZQo1q'], 'name': ['wimp'], 'email': ['wimp@gmail.com'], 'password': ['123'], 'phone': ['1234567890'], 'userType': ['realtor'], 'licenseNumber': ['123']}>
+WARNING 2024-10-30 11:37:36,989 log Bad Request: /auth/register/
+INFO 2024-10-30 11:38:11,266 views Registration attempt with data: <QueryDict: {'csrfmiddlewaretoken': ['kHvSC8ej2RlLMGXjOYgD8cim9turHX2sXLEas1H6phfT2CO5Ft6Wa1DqzRSZQo1q'], 'name': ['wimpy'], 'email': ['wimpy@gmail.com'], 'password': ['123'], 'phone': ['1234567890'], 'userType': ['realtor'], 'licenseNumber': ['123']}>
+WARNING 2024-10-30 11:38:12,052 log Not Found: /auth/register/pages/dashboard/
+INFO 2024-10-30 11:39:37,109 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\views.py changed, reloading.
+INFO 2024-10-30 11:39:37,740 autoreload Watching for file changes with StatReloader
+INFO 2024-10-30 11:42:16,771 autoreload C:\Users\ignat\Documents\GitHub\RealHome\user\admin.py changed, reloading.
+INFO 2024-10-30 11:42:17,431 autoreload Watching for file changes with StatReloader
+INFO 2024-10-30 11:44:02,222 autoreload Watching for file changes with StatReloader
+INFO 2024-10-30 11:46:00,759 views Registration attempt with data: <QueryDict: {'csrfmiddlewaretoken': ['P7lEucXEGZsygbl9gnrJDzZyMoR7ll3ZTl1ndyK2C4K8oENnyblr4592c36LjmYf'], 'name': ['joe'], 'email': ['joe@g.com'], 'password': ['1234'], 'phone': ['1234567890'], 'userType': ['realtor'], 'licenseNumber': ['123']}>
+ERROR 2024-10-30 11:47:13,959 log Internal Server Error: /sell/
+Traceback (most recent call last):
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\Documents\GitHub\RealHome\main\views.py", line 26, in sell
+    return redirect('details', property_id=property.id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ignat\.virtualenvs\RealHome-yIhiK8XI\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'details' not found. 'details' is not a valid view function or pattern name.
+INFO 2024-10-30 11:47:55,092 autoreload C:\Users\ignat\Documents\GitHub\RealHome\main\views.py changed, reloading.
+INFO 2024-10-30 11:47:55,751 autoreload Watching for file changes with StatReloader

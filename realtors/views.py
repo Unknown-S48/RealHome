@@ -1,10 +1,13 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from django.core.mail import send_mail
 from .models import Contact
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 from django.conf import settings
+from main.models import Property
+from realtors.models import Realtor
+from django.db.models import Count
 
 @login_required
 def contact_agent(request):
@@ -74,3 +77,36 @@ def contact_agent(request):
         'success': False,
         'message': 'Invalid request method.'
     })
+
+def realtor_profile(request, realtor_id):
+    realtor = get_object_or_404(Realtor, id=realtor_id)
+    
+    # Get active listings for this realtor
+    active_listings = Property.objects.filter(
+        realtor=realtor, 
+        is_active=True
+    ).order_by('-created_at')
+    
+    # Get statistics
+    total_listings = Property.objects.filter(realtor=realtor).count()
+    sold_listings = Property.objects.filter(
+        realtor=realtor, 
+        status='sold'
+    ).count()
+    
+    # Get listing types distribution
+    listing_types = Property.objects.filter(realtor=realtor).values(
+        'property_type'
+    ).annotate(
+        count=Count('property_type')
+    )
+    
+    context = {
+        'realtor': realtor,
+        'active_listings': active_listings,
+        'total_listings': total_listings,
+        'sold_listings': sold_listings,
+        'listing_types': listing_types,
+    }
+    
+    return render(request, 'pages/realtor_profile.html', context)
